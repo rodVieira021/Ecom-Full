@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+.App,
+.Nav-div {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* NAV */
+
+.Nav-red-banner {
+  font-size: 12px;
+  justify-content: space-between;
+  background-color: #d41518;
+  color: #ffffff;
+  padding: 5px 48px;
+}
+
+.red-banner-left-info,
+.red-banner-menu {
+  gap: 20px;
+}
+
+.Nav-main {
+  justify-content: space-between;
+  padding: 5px 48px;
+}
+
+.Nav-main-menu {
+  gap: 20px;
+  background-color: ;
+}
