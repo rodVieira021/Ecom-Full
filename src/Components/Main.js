@@ -7,7 +7,7 @@ import "../Styles/Reusable.css"
 const Main = () => {
   return (
 
-        <div>Main</div>
+        <div></div>
    
   );
 };

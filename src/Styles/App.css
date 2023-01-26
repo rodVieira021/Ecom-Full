@@ -1,10 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+/* COLORS */
+:root {
+  --strong-black: #000;
+  --middle-black: #000000d7;
+  --nav-red: #d41518;
+  --white: #fff;
+  --white-gray: #ffffff;
+}
 
 .App,
 .Nav-div {
@@ -14,24 +22,63 @@
 /* NAV */
 
 .Nav-red-banner {
-  font-size: 12px;
+  font-size: 10px;
   justify-content: space-between;
-  background-color: #d41518;
-  color: #ffffff;
-  padding: 5px 48px;
+  background-color: var(--nav-red);
+  color: var(--white-gray);
+  padding: 8px 48px;
 }
 
-.red-banner-left-info,
-.red-banner-menu {
+.red-banner-left-info {
   gap: 20px;
 }
 
 .Nav-main {
   justify-content: space-between;
-  padding: 5px 48px;
+  padding: 5px 28px;
 }
 
-.Nav-main-menu {
+.ul-nav-1,
+.ul-nav-2 {
+  list-style: none;
   gap: 20px;
-  background-color: ;
+}
+
+.ul-nav-1 li a {
+  color: var(--white-gray);
+  text-decoration: none;
+}
+.ul-nav-2 li a {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--strong-black);
+  text-decoration: none;
+  padding: 0 18px;
+}
+
+.phone-logo {
+  width: 15px;
+}
+
+.site-logo {
+  width: 50px;
+}
+.siteName {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--middle-black);
+}
+
+.nav-main-right {
+  gap: 10px;
+}
+
+.magnifier-nav {
+  width: 25px;
+  height: 25px;
+}
+
+.cart-nav {
+  width: 25px;
+  height: 25px;
 }
