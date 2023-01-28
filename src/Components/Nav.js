@@ -1,12 +1,28 @@
 import React from "react";
 import "../Styles/App.css";
 import "../Styles/Reusable.css";
+import { useState } from "react";
 import telephoneNav from "../Images/telephoneNav.png";
 import magnifierNav from "../Images/magnifierNav.png";
 import cartNav from "../Images/cartNav.png";
 import siteLogo from "../Images/siteLogo.png";
+import DropdownNavOne from "./DropDowns/DropdownNavOne";
+import DropdownNavTwo from "./DropDowns/DropdownNavTwo";
+import DropdownNavTree from "./DropDowns/DropdownNavTree";
+import DropdownNavFour from "./DropDowns/DropdownNavFour";
+import DropdownNavFive from "./DropDowns/DropdownNavFive";
+
+// const menuHover = () => {
+
+// };
 
 const Nav = () => {
+  const [hoverOne, setHoverOne] = useState(false);
+  const [hoverTwo, setHoverTwo] = useState(false);
+  const [hoverTree, setHoverTree] = useState(false);
+  const [hoverFour, setHoverFour] = useState(false);
+  const [hoverFive, setHoverFive] = useState(false);
+
   return (
     <div className="Nav-div ">
       <div className="Nav-red-banner flex aic">
@@ -39,26 +55,85 @@ const Nav = () => {
       </div>
 
       <div className="Nav-main flex aic">
-        <div className="logoName flex aic">
+        <div className="logo-name flex aic">
           <img className="site-logo" src={siteLogo} alt="siteLogo" />
           <p className="siteName">AutoParts</p>
         </div>
         <div>
           <ul className="ul-nav-2 flex">
             <li>
-              <a href="#">HOME</a>
+              <a
+                className="a-hover-1"
+                href="1"
+                onMouseOver={() => {
+                  setHoverOne(true);
+                }}
+                onMouseLeave={() => {
+                  setHoverOne(false);
+                }}
+              >
+                HOME
+                {hoverOne ? <DropdownNavOne /> : ""}
+              </a>
             </li>
             <li>
-              <a href="#">SHOP</a>
+              <a
+                href="2"
+                onMouseOver={() => {
+                  setHoverTwo(true);
+                }}
+                onMouseLeave={() => {
+                  setHoverTwo(false);
+                }}
+              >
+                SHOP
+                {hoverTwo ? <DropdownNavTwo /> : ""}
+              </a>
             </li>
             <li>
-              <a href="#">PRODUCT</a>
+              <a
+                href="3"
+                onMouseOver={() => {
+                  setHoverTree(true);
+                }}
+                onMouseLeave={() => {
+                  setHoverTree(false);
+                }}
+              >
+                PRODUCT
+                {hoverTree ? <DropdownNavTree /> : ""}
+              </a>
             </li>
             <li>
-              <a href="#">BLOG</a>
+              <a
+                href="4"
+                onMouseOver={() => {
+                  setHoverFour(true);
+                }}
+                onMouseLeave={() => {
+                  setHoverFour(false);
+                }}
+              >
+                PAGES
+                {hoverFour ? <DropdownNavFour /> : ""}
+              </a>
             </li>
             <li>
-              <a href="#">BUY NOW!</a>
+              <a
+                href="5"
+                onMouseOver={() => {
+                  setHoverFive(true);
+                }}
+                onMouseLeave={() => {
+                  setHoverFive(false);
+                }}
+              >
+                BLOG
+                {hoverFive ? <DropdownNavFive /> : ""}
+              </a>
+            </li>
+            <li>
+              <a href="5">BUY NOW!</a>
             </li>
           </ul>
         </div>
@@ -67,6 +142,7 @@ const Nav = () => {
           <img className="cart-nav" src={cartNav} alt="cart" />
         </div>
       </div>
+      {/* {hoverOne ? <DropdownNavOne /> : ""} */}
     </div>
   );
 };

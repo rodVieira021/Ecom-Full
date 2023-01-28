@@ -38,10 +38,14 @@
   padding: 5px 28px;
 }
 
-.ul-nav-1,
-.ul-nav-2 {
+.ul-nav-1 {
   list-style: none;
   gap: 20px;
+}
+
+.ul-nav-2 {
+  list-style: none;
+  gap: 50px;
 }
 
 .ul-nav-1 li a {
@@ -53,19 +57,24 @@
   font-weight: 600;
   color: var(--strong-black);
   text-decoration: none;
-  padding: 0 18px;
 }
 
 .phone-logo {
   width: 15px;
 }
 
+.logo-name {
+  position: relative;
+}
+
 .site-logo {
   width: 50px;
 }
 .siteName {
+  position: absolute;
+  left: 50px;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--middle-black);
 }
 
@@ -81,4 +90,49 @@
 .cart-nav {
   width: 25px;
   height: 25px;
+}
+
+/* NAV DROPDOWN */
+
+.a-hover-1 {
+  position: relative;
+}
+.dropdown-nav-1 {
+  position: absolute;
+  justify-items: center;
+  left: -20px;
+  width: 600px;
+  padding: 10px;
+}
+
+.dropdown-nav-2,
+.dropdown-nav-3 {
+  position: absolute;
+  justify-items: center;
+  left: 350px;
+  width: 600px;
+  padding: 10px;
+}
+
+.dropdown-nav-4 {
+  position: absolute;
+  justify-items: center;
+  left: 660px;
+  width: 600px;
+  padding: 10px;
+}
+
+.dropdown-nav-5 {
+  position: absolute;
+  justify-items: center;
+  left: 757px;
+  width: 600px;
+  padding: 10px;
+}
+
+.ul-drop-1,
+.ul-drop-2,
+.ul-drop-3,
+.ul-drop-4 {
+  list-style: none;
 }
