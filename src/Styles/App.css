@@ -100,9 +100,13 @@
 .dropdown-nav-1 {
   position: absolute;
   justify-items: center;
-  left: -20px;
+  left: 350px;
   width: 600px;
   padding: 10px;
+  visibility: hidden;
+}
+.hover-home:hover .dropdown-nav-1 {
+  visibility: visible;
 }
 
 .dropdown-nav-2,
@@ -112,6 +116,15 @@
   left: 350px;
   width: 600px;
   padding: 10px;
+  visibility: hidden;
+}
+
+.hover-shop:hover .dropdown-nav-2 {
+  visibility: visible;
+}
+
+.hover-product:hover .dropdown-nav-3 {
+  visibility: visible;
 }
 
 .dropdown-nav-4 {
@@ -120,6 +133,11 @@
   left: 660px;
   width: 600px;
   padding: 10px;
+  visibility: hidden;
+}
+
+.hover-pages:hover .dropdown-nav-4 {
+  visibility: visible;
 }
 
 .dropdown-nav-5 {
@@ -128,6 +146,11 @@
   left: 757px;
   width: 600px;
   padding: 10px;
+  visibility: hidden;
+}
+
+.hover-blog:hover .dropdown-nav-5 {
+  visibility: visible;
 }
 
 .ul-drop-1,
