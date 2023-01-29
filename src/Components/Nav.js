@@ -55,31 +55,31 @@ const Nav = () => {
         <div>
           <ul className="ul-nav-2 flex">
             <li>
-              <a href="1" className="hover-home">
+              <a href="1" className="hover-home pr">
                 HOME
-              <DropdownNavOne />
+                <DropdownNavOne />
               </a>
             </li>
             <li>
-              <a href="2" className="hover-shop">
+              <a href="2" className="hover-shop pr">
                 SHOP
                 <DropdownNavTwo />
               </a>
             </li>
             <li>
-              <a href="3" className="hover-product">
+              <a href="3" className="hover-product pr">
                 PRODUCT
                 <DropdownNavTree />
               </a>
             </li>
             <li>
-              <a href="4" className="hover-pages">
+              <a href="4" className="hover-pages pr">
                 PAGES
                 <DropdownNavFour />
               </a>
             </li>
             <li>
-              <a href="5" className="hover-blog">
+              <a href="5" className="hover-blog pr">
                 BLOG
                 <DropdownNavFive />
               </a>

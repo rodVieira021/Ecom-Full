@@ -2,9 +2,9 @@ import React from "react";
 
 const DropdownNavFour = () => {
   return (
-    <div className="dropdown-nav-4">
+    <div className="dropdown-nav-4 abs">
       <div>
-        <ul className="ul-drop-1">
+        <ul className="ul-drop">
           <li>PAGES 1</li>
           <li>PAGES 2</li>
           <li>PAGES 3</li>

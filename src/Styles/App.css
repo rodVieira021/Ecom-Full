@@ -12,6 +12,7 @@
   --nav-red: #d41518;
   --white: #fff;
   --white-gray: #ffffff;
+  --aqua-green: #2ea4a4;
 }
 
 .App,
@@ -36,6 +37,7 @@
 .Nav-main {
   justify-content: space-between;
   padding: 5px 28px;
+  max-width: 1500px;
 }
 
 .ul-nav-1 {
@@ -94,68 +96,98 @@
 
 /* NAV DROPDOWN */
 
-.a-hover-1 {
-  position: relative;
-}
 .dropdown-nav-1 {
-  position: absolute;
-  justify-items: center;
-  left: 350px;
+  top: 30px;
+  left: 10px;
+  width: 600px;
+  padding: 10px;
+  visibility: hidden;
+  
+}
+
+.dropdown-nav-2 {
+  top: 30px;
+  left: -90px;
   width: 600px;
   padding: 10px;
   visibility: hidden;
 }
-.hover-home:hover .dropdown-nav-1 {
-  visibility: visible;
-}
 
-.dropdown-nav-2,
 .dropdown-nav-3 {
-  position: absolute;
-  justify-items: center;
-  left: 350px;
+  top: 30px;
+  left: -180px;
   width: 600px;
   padding: 10px;
   visibility: hidden;
 }
 
-.hover-shop:hover .dropdown-nav-2 {
-  visibility: visible;
-}
-
-.hover-product:hover .dropdown-nav-3 {
-  visibility: visible;
-}
-
-.dropdown-nav-4 {
-  position: absolute;
-  justify-items: center;
-  left: 660px;
-  width: 600px;
-  padding: 10px;
-  visibility: hidden;
-}
-
-.hover-pages:hover .dropdown-nav-4 {
-  visibility: visible;
-}
-
+.dropdown-nav-4,
 .dropdown-nav-5 {
-  position: absolute;
-  justify-items: center;
-  left: 757px;
-  width: 600px;
+  top: 30px;
+  left: -10px;
+  width: 250px;
   padding: 10px;
   visibility: hidden;
 }
 
+.hover-home:hover,
+.hover-shop:hover,
+.hover-product:hover,
+.hover-pages:hover,
+.hover-blog:hover {
+  color: var(--aqua-green);
+  
+}
+
+.hover-home:hover .dropdown-nav-1,
+.hover-shop:hover .dropdown-nav-2,
+.hover-product:hover .dropdown-nav-3,
+.hover-pages:hover .dropdown-nav-4,
 .hover-blog:hover .dropdown-nav-5 {
   visibility: visible;
+  color: var(--strong-black);
+  top: 15px;
+  transition: all 0.5s ease-in-out;
+  
 }
 
-.ul-drop-1,
-.ul-drop-2,
-.ul-drop-3,
-.ul-drop-4 {
+.ul-drop {
   list-style: none;
+  padding: 30px 0;
+}
+
+.ul-drop h4 {
+  padding-bottom: 5px;
+}
+
+.ul-drop li:hover::before {
+  content: "> ";
+}
+
+.dropdown-nav-1,
+.dropdown-nav-2,
+.dropdown-nav-3,
+.dropdown-nav-4,
+.dropdown-nav-5 {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #fff;
+  border: 1px solid rgba(128, 128, 128, 0.528);
+  
+}
+
+
+/* MAIN */
+
+.black-stripe{
+  justify-content: space-between;
+  background-color: var(--strong-black);
+  color: var(--white);
+  font-size: 12px;
+  padding: 0 150px;
+  height: 35px;
+}
+
+.black-stripe img {
+  width: 20px;
+  margin-right: 5px;
 }

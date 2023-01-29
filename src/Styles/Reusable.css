@@ -15,6 +15,14 @@
   display: grid;
 }
 
+.pr{
+  position: relative;
+}
+
+.abs{
+  position: absolute;
+}
+
 .col-2 {
   grid-template-columns: repeat(2, 1fr);
 }
