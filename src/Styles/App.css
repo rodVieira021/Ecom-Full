@@ -12,6 +12,7 @@
   --nav-red: #d41518;
   --white: #fff;
   --white-gray: #ffffff;
+  --fade-gray: #80808039;
   --aqua-green: #2ea4a4;
 }
 
@@ -34,6 +35,40 @@
   gap: 20px;
 }
 
+.ul-usd-nav {
+  list-style: none;
+  gap: 10px;
+}
+
+.div-usd,
+.div-lang {
+  background-color: var(--white-gray);
+  color: var(--strong-black);
+  z-index: 997;
+}
+
+.ul-usd-nav li {
+  cursor: pointer;
+}
+
+.ul-usd,
+.ul-lang {
+  list-style: none;
+}
+
+.ul-usd li,
+.ul-lang li {
+  cursor: pointer;
+  border-bottom: 1px solid var(--fade-gray);
+  padding: 9px;
+  transition: 0.5s;
+}
+
+.ul-usd li:hover,
+.ul-lang li:hover {
+  background-color: var(--fade-gray);
+}
+
 .Nav-main {
   justify-content: space-between;
   padding: 5px 28px;
@@ -43,6 +78,11 @@
 .ul-nav-1 {
   list-style: none;
   gap: 20px;
+  cursor: pointer;
+}
+
+.ul-nav-1 a:hover {
+  text-decoration: underline;
 }
 
 .ul-nav-2 {
@@ -85,11 +125,13 @@
 }
 
 .magnifier-nav {
+  cursor: pointer;
   width: 25px;
   height: 25px;
 }
 
 .cart-nav {
+  cursor: pointer;
   width: 25px;
   height: 25px;
 }
@@ -102,7 +144,6 @@
   width: 600px;
   padding: 10px;
   visibility: hidden;
-  
 }
 
 .dropdown-nav-2 {
@@ -134,9 +175,9 @@
 .hover-shop:hover,
 .hover-product:hover,
 .hover-pages:hover,
-.hover-blog:hover {
+.hover-blog:hover,
+.hover-buy:hover {
   color: var(--aqua-green);
-  
 }
 
 .hover-home:hover .dropdown-nav-1,
@@ -148,7 +189,6 @@
   color: var(--strong-black);
   top: 15px;
   transition: all 0.5s ease-in-out;
-  
 }
 
 .ul-drop {
@@ -172,13 +212,38 @@
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   background-color: #fff;
   border: 1px solid rgba(128, 128, 128, 0.528);
-  
 }
 
+.search {
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.input-form {
+  width: 800px;
+  height: 35px;
+  border: none;
+}
+
+.input-form:focus {
+  outline: none;
+}
+
+.btn-close-form {
+  border: none;
+  cursor: pointer;
+  background-color: var(--white);
+  font-size: 35px;
+}
 
 /* MAIN */
 
-.black-stripe{
+.black-stripe {
   justify-content: space-between;
   background-color: var(--strong-black);
   color: var(--white);

@@ -10,22 +10,31 @@ import DropdownNavTwo from "./DropDowns/DropdownNavTwo";
 import DropdownNavTree from "./DropDowns/DropdownNavTree";
 import DropdownNavFour from "./DropDowns/DropdownNavFour";
 import DropdownNavFive from "./DropDowns/DropdownNavFive";
+import DropdownUsd from "./DropDowns/DropdownUsd";
+import DropdownLang from "./DropDowns/DropdownLang";
 
-// const menuHover = () => {
-
-// };
+import { useState } from "react";
 
 const Nav = () => {
+  const [usd, setUsd] = useState(false);
+  const [lang, setLang] = useState(false);
+  const [searchOn, setSearchOn] = useState(false);
+
   return (
-    <div className="Nav-div ">
+    <div className="Nav-div pr">
       <div className="Nav-red-banner flex aic">
         <div className="red-banner-left-info flex aic">
-          <p>
-            USD <span>&#9207;</span>
-          </p>
-          <p>
-            ENGLISH <span>&#9207;</span>
-          </p>
+          <ul className="ul-usd-nav flex pr">
+            <li onClick={(e) => setUsd(!usd)}>
+              USD <span>&#9207;</span>
+              {usd ? <DropdownUsd /> : ""}
+            </li>
+            <li onClick={() => setLang(!lang)}>
+              ENGLISH <span>&#9207;</span>
+              {lang ? <DropdownLang /> : ""}
+            </li>
+          </ul>
+
           <img className="phone-logo" src={telephoneNav} alt="phone" />
           <p>+555 (115) 987654321</p>
         </div>
@@ -85,14 +94,40 @@ const Nav = () => {
               </a>
             </li>
             <li>
-              <a href="5">BUY NOW!</a>
+              <a href="6" className="hover-buy">
+                BUY NOW!
+              </a>
             </li>
           </ul>
         </div>
         <div className="nav-main-right flex aic ">
-          <img className="magnifier-nav" src={magnifierNav} alt="magnifier" />
+          <img
+            className="magnifier-nav"
+            src={magnifierNav}
+            alt="magnifier"
+            onClick={() => setSearchOn(true)}
+          />
           <img className="cart-nav" src={cartNav} alt="cart" />
         </div>
+        {searchOn ? (
+          <div className="search flex aic abs">
+            <form className="flex aic">
+              <img src={magnifierNav} alt="magnifier" />
+              <input
+                className="input-form"
+                placeholder="Search for products..."
+              />
+            </form>
+            <button
+              className="btn-close-form"
+              onClick={() => setSearchOn(false)}
+            >
+              &#215;
+            </button>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
