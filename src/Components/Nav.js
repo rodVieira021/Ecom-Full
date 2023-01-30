@@ -25,10 +25,12 @@ const Nav = () => {
       <div className="Nav-red-banner flex aic">
         <div className="red-banner-left-info flex aic">
           <ul className="ul-usd-nav flex pr">
+            
             <li onClick={(e) => setUsd(!usd)}>
               USD <span>&#9207;</span>
               {usd ? <DropdownUsd /> : ""}
             </li>
+
             <li onClick={() => setLang(!lang)}>
               ENGLISH <span>&#9207;</span>
               {lang ? <DropdownLang /> : ""}

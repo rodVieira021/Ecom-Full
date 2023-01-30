@@ -24,6 +24,13 @@ const Main = () => {
           <p>Extended Returns Until 10th March.</p>
         </div>
       </div>
+      <div className="hero-main">
+        <div className="hero-text">
+          <h2>THE PERFECT TEMPLATE FOR YOUR AUTO PARTS BUSINESS</h2>
+          <p>BUILD THE PERFECT STORE WITH AUTOPARTS STORES</p>
+          <button className="hero-btn">PURCHASE NOW</button>
+        </div>
+      </div>
     </>
   );
 };

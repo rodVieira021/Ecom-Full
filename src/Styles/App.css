@@ -14,11 +14,14 @@
   --white-gray: #ffffff;
   --fade-gray: #80808039;
   --aqua-green: #2ea4a4;
+  --red-btn: #d41518;
+  --fade-btn: #d41518db;
 }
 
 .App,
 .Nav-div {
   font-family: "Montserrat", sans-serif;
+  z-index: 99999;
 }
 
 /* NAV */
@@ -251,4 +254,39 @@
 .black-stripe img {
   width: 20px;
   margin-right: 5px;
+}
+
+.hero-main {
+  background-image: url("../Images/hero-main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 70vh;
+}
+
+.hero-text {
+  color: var(--strong-black);
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-main p {
+  color: var(--white);
+  padding-bottom: 20px;
+}
+
+.hero-btn {
+  border: none;
+  cursor: pointer;
+  background-color: var(--fade-btn);
+  color: var(--white);
+  padding: 8px 16px;
+}
+
+.hero-btn:hover {
+  background-color: var(--nav-red);
 }
