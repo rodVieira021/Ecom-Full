@@ -171,20 +171,15 @@
   visibility: hidden;
 }
 
-.hover-home:hover,
-.hover-shop:hover,
-.hover-product:hover,
-.hover-pages:hover,
-.hover-blog:hover,
-.hover-buy:hover {
+.hover:hover {
   color: var(--aqua-green);
 }
 
-.hover-home:hover .dropdown-nav-1,
-.hover-shop:hover .dropdown-nav-2,
-.hover-product:hover .dropdown-nav-3,
-.hover-pages:hover .dropdown-nav-4,
-.hover-blog:hover .dropdown-nav-5 {
+.hover:hover .dropdown-nav-1,
+.hover:hover .dropdown-nav-2,
+.hover:hover .dropdown-nav-3,
+.hover:hover .dropdown-nav-4,
+.hover:hover .dropdown-nav-5 {
   visibility: visible;
   color: var(--strong-black);
   top: 15px;
@@ -222,6 +217,7 @@
   height: 100%;
   justify-content: space-between;
   padding: 50px;
+  z-index: 998;
 }
 
 .input-form {
