@@ -1,8 +1,8 @@
 import "./Styles/App.css";
 import "./Styles/Reusable.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "./Components/Main";
-import Nav from "./Components/Nav";
+import Main from "./Components/Pages/Main";
+import Nav from "./Components/Partials/Nav";
 
 function App() {
   return (

@@ -1,0 +1,50 @@
+.black-stripe {
+    justify-content: space-between;
+    background-color: var(--strong-black);
+    color: var(--white);
+    font-size: 12px;
+    padding: 0 150px;
+    height: 35px;
+  }
+  
+  .black-stripe img {
+    width: 20px;
+    margin-right: 5px;
+  }
+  
+  .hero-main {
+    background-image: url("../Images/hero-main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 70vh;
+  }
+  
+  .hero-text {
+    color: var(--strong-black);
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero-main p {
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+  
+  .hero-btn {
+    border: none;
+    cursor: pointer;
+    background-color: var(--fade-btn);
+    color: var(--white);
+    padding: 8px 16px;
+    /* margin-top: 20px; */
+  }
+  
+  .hero-btn:hover {
+    background-color: var(--nav-red);
+  }
+  

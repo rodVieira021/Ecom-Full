@@ -1,1 +1,30 @@
 slide down effect USD ENGLISH btn the  apply on cart
+
+redux folder
+write the dropdowns
+
+parallex
+
+-Home Page Completion
+- Products Array in Redux
+{
+    id: 1,
+    productTitle:  ",
+    productCategory: "
+    productDescription: "
+    productPrice:
+    productBrand:
+}
+
+- Products Listing (Cards)
+- Add to Cart (btn + functionality)
+- cart Items count (create card)
+- Cart Page (Listing + Updating + Deletion (Single + All))
+- Contact + About Page
+- Checkout Page (Address + Payment)
+- On submission order placement
+- Wishlist functionality (Heart Button)Redux[] checkbox animation
+- Wishlist page
+- Dark/Light Mode (local Storage)
+- Notifications 
+- Multi-language

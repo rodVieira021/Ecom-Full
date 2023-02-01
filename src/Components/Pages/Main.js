@@ -1,9 +1,9 @@
 import React from "react";
-import "../Styles/App.css";
+import "./Main.css";
 import "../Styles/Reusable.css";
-import truck from "../Images/truck.png";
-import tick from "../Images/tick.png";
-import send from "../Images/send.png";
+import truck from "./Images/truck.png";
+import tick from "./Images/tick.png";
+import send from "./Images/send.png";
 
 const Main = () => {
   return (
