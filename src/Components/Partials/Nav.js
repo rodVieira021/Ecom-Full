@@ -1,10 +1,10 @@
 import React from "react";
-import "../Styles/App.css";
-import "../Styles/Reusable.css";
-import telephoneNav from "../Images/telephoneNav.png";
-import magnifierNav from "../Images/magnifierNav.png";
-import cartNav from "../Images/cartNav.png";
-import siteLogo from "../Images/siteLogo.png";
+import "../../Styles/App.css";
+import "../../Styles/Reusable.css";
+import telephoneNav from "../../Images/telephoneNav.png";
+import magnifierNav from "../../Images/magnifierNav.png";
+import cartNav from "../../Images/cartNav.png";
+import siteLogo from "../../Images/siteLogo.png";
 import DropdownUsd from "./DropdownUsd";
 import DropdownLang from "./DropdownLang";
 
@@ -65,7 +65,7 @@ const Nav = () => {
                 <p>HOME</p>
                 <div className="drop-1 dropdown-nav-1 grid col-4 abs">
                   <ul className="ul-drop">
-                    <h4>HOME GROUP 1</h4>
+                    <li className="li-title">HOME GROUP 1</li>
                     <li>HOME</li>
                     <li>HOME</li>
                     <li>HOME</li>
@@ -75,7 +75,7 @@ const Nav = () => {
                   </ul>
 
                   <ul className="ul-drop">
-                    <h4>HOME GROUP 2</h4>
+                    <li className="li-title">HOME GROUP 2</li>
                     <li>HOME</li>
                     <li>HOME</li>
                     <li>HOME</li>
@@ -85,7 +85,7 @@ const Nav = () => {
                   </ul>
 
                   <ul className="ul-drop">
-                    <h4>HOME GROUP 3</h4>
+                    <li className="li-title">HOME GROUP 3</li>
                     <li>HOME</li>
                     <li>HOME</li>
                     <li>HOME</li>
@@ -95,7 +95,7 @@ const Nav = () => {
                   </ul>
 
                   <ul className="ul-drop">
-                    <h4>HOME GROUP 4</h4>
+                    <li className="li-title">HOME GROUP 4</li>
                     <li>HOME</li>
                     <li>HOME</li>
                     <li>HOME</li>
@@ -111,7 +111,7 @@ const Nav = () => {
                 <p>SHOP</p>
                 <div className="drop-2 dropdown-nav-2 grid col-4 abs">
                   <ul className="ul-drop">
-                    <h4>SHOP GROUP 1</h4>
+                    <li className="li-title">SHOP GROUP 1</li>
                     <li>SHOP</li>
                     <li>SHOP</li>
                     <li>SHOP</li>
@@ -121,7 +121,7 @@ const Nav = () => {
                   </ul>
 
                   <ul className="ul-drop">
-                    <h4>SHOP GROUP 2</h4>
+                    <li className="li-title">SHOP GROUP 2</li>
                     <li>SHOP</li>
                     <li>SHOP</li>
                     <li>SHOP</li>
@@ -131,7 +131,7 @@ const Nav = () => {
                   </ul>
 
                   <ul className="ul-drop">
-                    <h4>SHOP GROUP 3</h4>
+                    <li className="li-title">SHOP GROUP 3</li>
                     <li>SHOP</li>
                     <li>SHOP</li>
                     <li>SHOP</li>
@@ -141,7 +141,7 @@ const Nav = () => {
                   </ul>
 
                   <ul className="ul-drop">
-                    <h4>SHOP GROUP 4</h4>
+                    <li className="li-title">SHOP GROUP 4</li>
                     <li>SHOP</li>
                     <li>SHOP</li>
                     <li>SHOP</li>
@@ -157,7 +157,7 @@ const Nav = () => {
                 <p> PRODUCT</p>
                 <div className="drop-3 dropdown-nav-3 grid col-4 abs">
                   <ul className="ul-drop">
-                    <h4>PRODUCT GROUP 1</h4>
+                    <li className="li-title">PRODUCT GROUP 1</li>
                     <li>PRODUCT</li>
                     <li>PRODUCT</li>
                     <li>PRODUCT</li>
@@ -167,7 +167,7 @@ const Nav = () => {
                   </ul>
 
                   <ul className="ul-drop">
-                    <h4>PRODUCT GROUP 2</h4>
+                    <li className="li-title">PRODUCT GROUP 2</li>
                     <li>PRODUCT</li>
                     <li>PRODUCT</li>
                     <li>PRODUCT</li>
@@ -177,7 +177,7 @@ const Nav = () => {
                   </ul>
 
                   <ul className="ul-drop">
-                    <h4>PRODUCT GROUP 3</h4>
+                    <li className="li-title">PRODUCT GROUP 3</li>
                     <li>PRODUCT</li>
                     <li>PRODUCT</li>
                     <li>PRODUCT</li>
@@ -187,7 +187,7 @@ const Nav = () => {
                   </ul>
 
                   <ul className="ul-drop">
-                    <h4>PRODUCT GROUP 4</h4>
+                    <li className="li-title">PRODUCT GROUP 4</li>
                     <li>PRODUCT</li>
                     <li>PRODUCT</li>
                     <li>PRODUCT</li>
