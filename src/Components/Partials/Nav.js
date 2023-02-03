@@ -1,6 +1,7 @@
 import React from "react";
-import "../../Styles/App.css";
-import "../../Styles/Reusable.css";
+import "./Nav.css"
+import "../../App.css";
+
 import telephoneNav from "../../Images/telephoneNav.png";
 import magnifierNav from "../../Images/magnifierNav.png";
 import cartNav from "../../Images/cartNav.png";

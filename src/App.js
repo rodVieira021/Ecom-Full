@@ -1,5 +1,4 @@
-import "./Styles/App.css";
-import "./Styles/Reusable.css";
+import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./Components/Pages/Main.js";
 import Nav from "./Components/Partials/Nav.js";

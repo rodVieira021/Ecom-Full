@@ -1,30 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* COLORS */
-:root {
-  --strong-black: #000;
-  --middle-black: #000000d7;
-  --nav-red: #d41518;
-  --white: #fff;
-  --white-gray: #ffffff;
-  --fade-gray: #80808039;
-  --aqua-green: #2ea4a4;
-  --red-btn: #d41518;
-  --fade-btn: #d41518db;
-}
-
-.App,
 .Nav-div {
   font-family: "Montserrat", sans-serif;
   z-index: 99999;
 }
-
-/* NAV */
 
 .Nav-red-banner {
   font-size: 10px;
@@ -97,7 +74,7 @@
   color: var(--white-gray);
   text-decoration: none;
 }
-.ul-nav-2 li div  {
+.ul-nav-2 li div {
   font-size: 13px;
   font-weight: 600;
   color: var(--strong-black);
@@ -108,13 +85,10 @@
   width: 15px;
 }
 
-
-
 .site-logo {
   width: 50px;
 }
 .siteName {
-
   font-weight: 800;
   font-size: 18px;
   color: var(--middle-black);
@@ -136,7 +110,7 @@
   height: 25px;
 }
 
-/* NAV DROPDOWN */
+/* DROPDOWN */
 
 .drop-1 {
   top: 30px;
@@ -212,10 +186,9 @@
   width: 4px;
 }
 
-.li-title{
+.li-title {
   font-weight: 700;
   padding-bottom: 15px;
-
 }
 
 .dropdown-nav-1,
@@ -255,56 +228,3 @@
   background-color: var(--white);
   font-size: 35px;
 }
-
-/* MAIN */
-
-.black-stripe {
-  justify-content: space-between;
-  background-color: var(--strong-black);
-  color: var(--white);
-  font-size: 12px;
-  padding: 0 150px;
-  height: 35px;
-}
-
-.black-stripe img {
-  width: 20px;
-  margin-right: 5px;
-}
-
-.hero-main {
-  background-image: url("../Images/hero-main.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 70vh;
-}
-
-.hero-text {
-  color: var(--strong-black);
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.hero-main p {
-  color: var(--white);
-  margin-bottom: 20px;
-}
-
-.hero-btn {
-  border: none;
-  cursor: pointer;
-  background-color: var(--fade-btn);
-  color: var(--white);
-  padding: 8px 16px;
-  /* margin-top: 20px; */
-}
-
-.hero-btn:hover {
-  background-color: var(--nav-red);
-}
-

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLORS */
+:root {
+  --strong-black: #000;
+  --middle-black: #000000d7;
+  --nav-red: #d41518;
+  --white: #fff;
+  --white-gray: #ffffff;
+  --fade-gray: #80808039;
+  --aqua-green: #2ea4a4;
+  --red-btn: #d41518;
+  --fade-btn: #d41518db;
+}
+
+
+
+/* REUSABLES */
+
+.flex {
+  display: flex;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.aic {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.pr{
+  position: relative;
+}
+
+.abs{
+  position: absolute;
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+.App {
+  font-family: "Montserrat", sans-serif;
+  z-index: 99999;
+}
+
