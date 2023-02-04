@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "./Components/Pages/Main.js";
-import Nav from "./Components/Partials/Nav.js";
+import Main from "./Components/Pages/Main.jsx";
+import Nav from "./Components/Partials/Nav.jsx";
 
 function App() {
   return (

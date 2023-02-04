@@ -1,3 +1,16 @@
+:root {
+  --strong-black: #000;
+  --middle-black: #000000d7;
+  --nav-red: #d41518;
+  --white: #fff;
+  --white-gray: #ffffff;
+  --fade-gray: #808080;
+  --aqua-green: #2ea4a4;
+  --red-btn: #d41518;
+  --fade-btn: #d41518db;
+  --gray-text: #505050ef;
+}
+
 .black-stripe {
   justify-content: space-between;
   background-color: var(--strong-black);
@@ -44,5 +57,102 @@
 }
 
 .hero-btn:hover {
+  background-color: var(--nav-red);
+}
+
+/* SECTION 2 */
+
+.section-2 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.section-2-header {
+  margin: 70px 0 35px 0;
+}
+.section-2-header h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.section-2-header p {
+  color: var(--gray-text);
+  font-size: 16px;
+}
+
+.gr-container-2 {
+  justify-items: center;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+
+.gr-container-2 div {
+  padding: 10px;
+  color: var(--gray-text);
+}
+
+/* SECTION 3 */
+
+/* SECTION 4 */
+
+.section-4 {
+  padding: 0 50px;
+}
+
+.section-4-header {
+  text-align: center;
+  margin: 70px 0 35px 0;
+}
+.section-4-header h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.section-4-header p {
+  color: var(--gray-text);
+  font-size: 16px;
+}
+
+.gr-container-4 {
+  justify-items: center;
+  row-gap: 30px;
+}
+
+.card h6 {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.card ul {
+  color: var(--gray-text);
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 0 20px 15px;
+}
+
+.card li {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.card h6:hover,
+.card li:hover {
+  text-decoration: underline;
+}
+
+.section-4-btn {
+  border: none;
+  cursor: pointer;
+  background-color: var(--fade-btn);
+  color: var(--white);
+  padding: 8px 16px;
+}
+
+.section-4-btn:hover {
   background-color: var(--nav-red);
 }
