@@ -11,6 +11,10 @@
   --gray-text: #505050ef;
 }
 
+/* .main{
+  margin-bottom: 1000px;
+} */
+
 .black-stripe {
   justify-content: space-between;
   background-color: var(--strong-black);
@@ -99,6 +103,8 @@
 
 .section-4 {
   padding: 0 50px;
+  margin-bottom: 50px;
+  z-index: 10;
 }
 
 .section-4-header {
@@ -168,4 +174,22 @@
 
 .section-4-btn:hover {
   background-color: var(--nav-red);
+}
+
+.parallax {
+  background-image: url("http://annimexweb.com/items/belle/assets/images/parallax-banners/home13-car-parts.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.inner-parallax {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }

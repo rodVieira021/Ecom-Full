@@ -1,6 +1,9 @@
 .Nav-div {
+  /* position: fixed; */
   font-family: "Montserrat", sans-serif;
   z-index: 99999;
+  background-color: #fff;
+  width: 100%;
 }
 
 .Nav-red-banner {
@@ -9,6 +12,7 @@
   background-color: var(--nav-red);
   color: var(--white-gray);
   padding: 8px 48px;
+  
 }
 
 .red-banner-left-info {
