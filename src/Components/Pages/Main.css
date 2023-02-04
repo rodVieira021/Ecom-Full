@@ -121,6 +121,19 @@
   row-gap: 30px;
 }
 
+.card {
+  overflow: hidden;
+}
+
+.card img {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+  opacity: 0.8;
+}
+
 .card h6 {
   font-size: 14px;
   font-weight: 400;

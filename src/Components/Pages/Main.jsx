@@ -11,6 +11,7 @@ import reliable from "../.././Images/reliable.png";
 import truckgr from "../.././Images/truck-gr.png";
 import lock from "../.././Images/lock.png";
 import Slider from "../Partials/Slider.jsx";
+import Parallax from "../Partials/Parallax.jsx";
 
 const Main = () => {
   return (
@@ -208,6 +209,7 @@ const Main = () => {
               src="http://annimexweb.com/items/belle/assets/images/autoparts/categories-img8.jpg"
               alt="car parts"
             />
+
             <h6>ENGINE & DRIVETRAIN</h6>
             <ul>
               <li>Catalytic Converters</li>
@@ -220,6 +222,7 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <Parallax/>
     </>
   );
 };
