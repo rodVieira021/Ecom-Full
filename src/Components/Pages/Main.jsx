@@ -22,6 +22,13 @@ const Main = () => {
   const images = [slider1, slider2, slider3, slider4, slider5, slider6];
   const [index, setIndex] = useState(0);
 
+  const clickPrev = () => {
+    setIndex(index === 0 ? images.length - 1 : index - 1);
+  };
+  const clickNext = () => {
+    setIndex(index === images.length - 1 ? 0 : index + 1);
+  };
+
   return (
     <div className="main">
       <div className="section-1 black-stripe flex">
@@ -100,19 +107,13 @@ const Main = () => {
 
       <div className="section-3">
         <div className="carousel">
-          <button
-            className="carousel-btn-prev"
-            onClick={() => setIndex(index - 1)}
-          >
+          <button className="carousel-btn-prev" onClick={clickPrev}>
             &#60;
           </button>
           <div>
             <img className="carousel-img" src={images[index]} alt="slide" />
           </div>
-          <button
-            className="carousel-btn-next"
-            onClick={() => setIndex(index + 1)}
-          >
+          <button className="carousel-btn-next" onClick={clickNext}>
             &#62;
           </button>
         </div>
