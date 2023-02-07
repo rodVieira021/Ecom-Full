@@ -3,7 +3,7 @@ slide down effect USD ENGLISH btn the  apply on cart
 redux folder
 write the dropdowns
 
-parallex
+parallax // //REVIEW    fix the button crossing sections
 
 -Home Page Completion
 - Products Array in Redux
