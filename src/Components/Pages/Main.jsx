@@ -17,6 +17,17 @@ import slider3 from "../.././Images/slider-img/slider3.jpg";
 import slider4 from "../.././Images/slider-img/slider4.jpg";
 import slider5 from "../.././Images/slider-img/slider5.jpg";
 import slider6 from "../.././Images/slider-img/slider6.jpg";
+import sec51a from "../.././Images/section-5-img/1a.jpg";
+import sec51b from "../.././Images/section-5-img/1b.jpg";
+import sec52a from "../.././Images/section-5-img/2a.jpg";
+import sec52b from "../.././Images/section-5-img/2b.jpg";
+import sec53a from "../.././Images/section-5-img/3a.jpg";
+import sec53b from "../.././Images/section-5-img/3b.jpg";
+import sec54a from "../.././Images/section-5-img/4a.jpg";
+import sec54b from "../.././Images/section-5-img/4b.jpg";
+import searchlogo from "../.././Images/section-5-img/magnifier-67.png";
+import favoritelogo from "../.././Images/section-5-img/favorite-30.png";
+import shufflelogo from "../.././Images/section-5-img/shuffle-48.png";
 
 const Main = () => {
   const images = [slider1, slider2, slider3, slider4, slider5, slider6];
@@ -112,6 +123,8 @@ const Main = () => {
           </button>
           <div>
             <img className="carousel-img" src={images[index]} alt="slide" />
+            <img className="carousel-img" src={images[index + 1]} alt="slide" />
+            <img className="carousel-img" src={images[index + 2]} alt="slide" />
           </div>
           <button className="carousel-btn-next" onClick={clickNext}>
             &#62;
@@ -262,239 +275,68 @@ const Main = () => {
           <button className="parallax-btn">CONTACT US NOW</button>
         </div>
       </div>
-      <div className="bnla">
-        <p className="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eum
-          itaque numquam. Rem porro perferendis numquam esse id nulla facere
-          nostrum, dolorum dolore exercitationem error molestiae eos tempora.
-          Optio, omnis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Soluta facere assumenda minus dignissimos ad amet dolores
-          incidunt impedit mollitia repudiandae veritatis ipsa earum voluptas,
-          consectetur praesentium blanditiis animi ea qui? Lorem ipsum dolor sit
-          amet, consectetur adipisicing elit. Laborum vitae aliquam ea eveniet
-          rem hic aperiam laboriosam soluta, est atque quisquam fuga deserunt?
-          A, aliquam. Asperiores illo suscipit cupiditate inventore. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Esse eum itaque numquam.
-          Rem porro perferendis numquam esse id nulla facere nostrum, dolorum
-          dolore exercitationem error molestiae eos tempora. Optio, omnis!Lorem
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Esse eum itaque numquam. Rem porro
-          perferendis numquam esse id nulla facere nostrum, dolorum dolore
-          exercitationem error molestiae eos tempora. Optio, omnis!Lorem Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-          assumenda minus dignissimos ad amet dolores incidunt impedit mollitia
-          repudiandae veritatis ipsa earum voluptas, consectetur praesentium
-          blanditiis animi ea qui? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Laborum vitae aliquam ea eveniet rem hic aperiam
-          laboriosam soluta, est atque quisquam fuga deserunt? A, aliquam.
-          Asperiores illo suscipit cupiditate inventore.
-        </p>
+      <div className="section-5 ">
+        <h4 className="sec-5-header">HOT NEW RELEASES</h4>
+        <div className="section-5-main flex aic">
+          <div className="sec-5-text-img flex pr">
+            <img className="sec-5-imgs" src={sec51a} alt="ropes" />
+            <div className="sec-5-logos flex abs">
+              <img src={searchlogo} alt="magnifier" />
+              <img src={favoritelogo} alt="favorite" />
+              <img src={shufflelogo} alt="shuffle" />
+            </div>
+            <button className="sec-5-btn abs">ADD TO CART</button>
+            <p className="sec-5-p-z">
+              8 Tons Powerful Car Auto Tow Rope Trailer Rope
+            </p>
+            <span>$79.43</span>
+          </div>
+          <div className="sec-5-text-img flex pr">
+            <img className="sec-5-imgs" src={sec52a} alt="ropes" />
+            <div className="sec-5-logos flex abs">
+              <img src={searchlogo} alt="magnifier" />
+              <img src={favoritelogo} alt="favorite" />
+              <img src={shufflelogo} alt="shuffle" />
+            </div>
+            <button className="sec-5-btn abs">ADD TO CART</button>
+            <p className="sec-5-p-z">
+              Air Pressure Gauge Heavy Duty Best For Car
+            </p>
+            <span>$26.48</span>
+          </div>
+          <div className="sec-5-text-img flex pr">
+            <img className="sec-5-imgs" src={sec53a} alt="ropes" />
+            <div className="sec-5-logos flex abs">
+              <img src={searchlogo} alt="magnifier" />
+              <img src={favoritelogo} alt="favorite" />
+              <img src={shufflelogo} alt="shuffle" />
+            </div>
+            <button className="sec-5-btn abs">ADD TO CART</button>
+            <p className="sec-5-p-z">
+              Air Pump MTB Motorcycle Car Basketball Bike
+            </p>
+            <span>$79.43</span>
+          </div>
+          <div className="sec-5-text-img flex pr">
+            <img className="sec-5-imgs" src={sec54a} alt="ropes" />
+            <div className="sec-5-logos flex abs">
+              <img
+                className="sec-5-logo-img"
+                src={searchlogo}
+                alt="magnifier"
+              />
+              <img
+                className="sec-5-logo-img"
+                src={favoritelogo}
+                alt="favorite"
+              />
+              <img className="sec-5-logo-img" src={shufflelogo} alt="shuffle" />
+            </div>
+            <button className="sec-5-btn abs">ADD TO CART</button>
+            <p className="sec-5-p-z">Honeywell Move Pure Car Air Purifier</p>
+            <span>$105.90</span>
+          </div>
+        </div>
       </div>
     </div>
   );

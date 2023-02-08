@@ -28,6 +28,3 @@ parallax // //REVIEW    fix the button crossing sections
 - Dark/Light Mode (local Storage)
 - Notifications 
 - Multi-language
-
-
-create the logic that make the slider go back to 0 if reach the max and go to max if reach the end

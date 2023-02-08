@@ -12,7 +12,6 @@
   background-color: var(--nav-red);
   color: var(--white-gray);
   padding: 8px 48px;
-  
 }
 
 .red-banner-left-info {
@@ -122,6 +121,8 @@
   width: 600px;
   padding: 10px;
   visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in;
 }
 
 .drop-2 {
@@ -130,6 +131,8 @@
   width: 600px;
   padding: 10px;
   visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in;
 }
 
 .drop-3 {
@@ -138,6 +141,8 @@
   width: 600px;
   padding: 10px;
   visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in;
 }
 
 .drop-4,
@@ -147,6 +152,8 @@
   width: 250px;
   padding: 10px;
   visibility: hidden;
+  opacity: 0;
+  transition: 0.2s ease-in;
 }
 
 .hover:hover {
@@ -162,7 +169,8 @@
   visibility: visible;
   color: var(--strong-black);
   top: 15px;
-  transition: all 0.5s ease;
+  opacity: 1;
+
 }
 
 .ul-drop {
@@ -194,10 +202,6 @@
   font-weight: 700;
   padding-bottom: 15px;
 }
-
-
-
-
 
 .dropdown-nav-1,
 .dropdown-nav-2,
