@@ -1,5 +1,6 @@
 .Nav-div {
-  /* position: fixed; */
+  position: sticky;
+  top: 0;
   font-family: "Montserrat", sans-serif;
   z-index: 99999;
   background-color: #fff;
@@ -170,7 +171,6 @@
   color: var(--strong-black);
   top: 15px;
   opacity: 1;
-
 }
 
 .ul-drop {

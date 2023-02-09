@@ -17,14 +17,6 @@ import slider3 from "../.././Images/slider-img/slider3.jpg";
 import slider4 from "../.././Images/slider-img/slider4.jpg";
 import slider5 from "../.././Images/slider-img/slider5.jpg";
 import slider6 from "../.././Images/slider-img/slider6.jpg";
-import sec51a from "../.././Images/section-5-img/1a.jpg";
-import sec51b from "../.././Images/section-5-img/1b.jpg";
-import sec52a from "../.././Images/section-5-img/2a.jpg";
-import sec52b from "../.././Images/section-5-img/2b.jpg";
-import sec53a from "../.././Images/section-5-img/3a.jpg";
-import sec53b from "../.././Images/section-5-img/3b.jpg";
-import sec54a from "../.././Images/section-5-img/4a.jpg";
-import sec54b from "../.././Images/section-5-img/4b.jpg";
 import searchlogo from "../.././Images/section-5-img/magnifier-67.png";
 import favoritelogo from "../.././Images/section-5-img/favorite-30.png";
 import shufflelogo from "../.././Images/section-5-img/shuffle-48.png";
@@ -34,10 +26,10 @@ const Main = () => {
   const [index, setIndex] = useState(0);
 
   const clickPrev = () => {
-    setIndex(index === 0 ? images.length - 1 : index - 1);
+    setIndex(index < images.length - 3 ? index + 1 : 0);
   };
   const clickNext = () => {
-    setIndex(index === images.length - 1 ? 0 : index + 1);
+    setIndex(index < images.length - 3 ? index + 1 : 0);
   };
 
   return (
@@ -279,7 +271,7 @@ const Main = () => {
         <h4 className="sec-5-header">HOT NEW RELEASES</h4>
         <div className="section-5-main flex aic">
           <div className="sec-5-text-img flex pr">
-            <img className="sec-5-imgs" src={sec51a} alt="ropes" />
+            <div className="sec-5-imgs-1"></div>
             <div className="sec-5-logos flex abs">
               <img src={searchlogo} alt="magnifier" />
               <img src={favoritelogo} alt="favorite" />
@@ -292,7 +284,7 @@ const Main = () => {
             <span>$79.43</span>
           </div>
           <div className="sec-5-text-img flex pr">
-            <img className="sec-5-imgs" src={sec52a} alt="ropes" />
+            <div className="sec-5-imgs-2"></div>
             <div className="sec-5-logos flex abs">
               <img src={searchlogo} alt="magnifier" />
               <img src={favoritelogo} alt="favorite" />
@@ -305,7 +297,7 @@ const Main = () => {
             <span>$26.48</span>
           </div>
           <div className="sec-5-text-img flex pr">
-            <img className="sec-5-imgs" src={sec53a} alt="ropes" />
+            <div className="sec-5-imgs-3" ></div>
             <div className="sec-5-logos flex abs">
               <img src={searchlogo} alt="magnifier" />
               <img src={favoritelogo} alt="favorite" />
@@ -318,7 +310,7 @@ const Main = () => {
             <span>$79.43</span>
           </div>
           <div className="sec-5-text-img flex pr">
-            <img className="sec-5-imgs" src={sec54a} alt="ropes" />
+            <div className="sec-5-imgs-4"></div>
             <div className="sec-5-logos flex abs">
               <img
                 className="sec-5-logo-img"

@@ -3,7 +3,9 @@ slide down effect USD ENGLISH btn the  apply on cart
 redux folder
 write the dropdowns
 
-parallax // //REVIEW    fix the button crossing sections
+
+how to write vanilla js in react (nav bar color changes)
+
 
 -Home Page Completion
 - Products Array in Redux
