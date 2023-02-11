@@ -36,7 +36,7 @@ const Footer = () => {
             </label>
             <input
               type="email"
-              placeholder="Email address"
+              placeholder=" Email address"
               className="footer-input"
             />
             <button className="footer-btn">SUBSCRIBE</button>
@@ -51,6 +51,51 @@ const Footer = () => {
             <img src={vimLogo} alt="social media" />
           </div>
         </div>
+      </div>
+      <div className="footer-bottom-container flex jcc">
+        <div className="footer-bottom flex  aic">
+          <div>
+            <h4 className="li-header">Quick Shop</h4>
+            <ul className="ul-footer">
+              <li>Body Parts</li>
+              <li>Engine</li>
+              <li>Electric</li>
+              <li>Tools</li>
+              <li>Accessories</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="li-header">Information</h4>
+            <ul className="ul-footer">
+              <li>About us</li>
+              <li>Careers</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+              <li>My Account</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="li-header">Customer Service</h4>
+            <ul className="ul-footer">
+              <li>Request Personal Data</li>
+              <li>FAQ's</li>
+              <li>Contact Us</li>
+              <li>Orders and Returns</li>
+              <li>Support Center</li>
+            </ul>
+          </div>
+          <div className="contact">
+            <h4 className="li-header">Contact Us</h4>
+            <p>
+              55 Gallaxy Enque, <br></br>2568 steet, 23568 NY
+            </p>
+            <p>(440) 000 000 0000</p>
+            <p>sales@sales.com</p>
+          </div>
+        </div>
+      </div>
+      <div className="rights">
+        <p>© 2023 AUTOPARTS. All Rights Reserved.</p>
       </div>
     </div>
   );

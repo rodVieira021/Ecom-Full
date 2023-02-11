@@ -54,13 +54,13 @@
 .hero-btn {
   border: none;
   cursor: pointer;
-  background-color: var(--fade-btn);
+  background-color: var(--red-btn);
   color: var(--white);
   padding: 8px 16px;
 }
 
 .hero-btn:hover {
-  background-color: var(--nav-red);
+  opacity: 0.8;
 }
 
 /* SECTION 2 */
@@ -201,13 +201,13 @@
 .section-4-btn {
   border: none;
   cursor: pointer;
-  background-color: var(--fade-btn);
+  background-color: var(--red-btn);
   color: var(--white);
   padding: 8px 16px;
 }
 
 .section-4-btn:hover {
-  background-color: var(--nav-red);
+  opacity: 0.8;
 }
 
 .parallax {
@@ -253,13 +253,13 @@
 .parallax-btn {
   border: none;
   cursor: pointer;
-  background-color: var(--fade-btn);
+  background-color: var(--red-btn);
   color: var(--white);
   padding: 8px 16px;
 }
 
 .parallax-btn:hover {
-  background-color: var(--nav-red);
+  opacity: 0.8;
 }
 
 /*  SECTION 5 */
@@ -304,7 +304,7 @@
 .sec-5-btn {
   border: none;
   color: var(--white);
-  background-color: var(--middle-black);
+  background-color: var(--strong-black);
   padding: 8px 18px;
   bottom: 50px;
   cursor: pointer;
@@ -312,11 +312,13 @@
   transition: 0.2s ease-in-out;
   z-index: 5;
   width: 90%;
+  cursor: pointer;
 }
 
 .sec-5-text-img:hover .sec-5-btn {
   visibility: visible;
   bottom: 85px;
+  opacity: 0.8;
 }
 
 .sec-5-logos {

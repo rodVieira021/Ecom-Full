@@ -21,7 +21,7 @@ const Nav = () => {
       <div className="Nav-red-banner flex aic">
         <div className="red-banner-left-info flex aic">
           <ul className="ul-usd-nav flex pr">
-            <li onClick={(e) => setUsd(!usd)}>
+            <li onClick={() => setUsd(!usd)}>
               USD <span>&#9207;</span>
               {usd ? <DropdownUsd /> : ""}
             </li>
@@ -238,7 +238,9 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-
+        <div className='cart-dropdown'>
+          
+        </div>
         <div className="nav-main-right flex aic ">
           <img
             className="magnifier-nav"
