@@ -1,5 +1,5 @@
 import React from "react";
-import "./Nav.css"
+import "./Nav.css";
 import "../../App.css";
 
 import telephoneNav from "../../Images/telephoneNav.png";
@@ -238,10 +238,7 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-        <div className='cart-dropdown'>
-          
-        </div>
-        <div className="nav-main-right flex aic ">
+        <div className="nav-main-right flex aic">
           <img
             className="magnifier-nav"
             src={magnifierNav}
