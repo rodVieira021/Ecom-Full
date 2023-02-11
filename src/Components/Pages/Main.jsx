@@ -20,17 +20,21 @@ import slider6 from "../.././Images/slider-img/slider6.jpg";
 import searchlogo from "../.././Images/section-5-img/magnifier-67.png";
 import favoritelogo from "../.././Images/section-5-img/favorite-30.png";
 import shufflelogo from "../.././Images/section-5-img/shuffle-48.png";
+import Footer from "../Partials/Footer";
 
 const Main = () => {
+  const [indexImg, setIndexImg] = useState(0);
+  const [indexText, setIndexText] = useState(0);
   const images = [slider1, slider2, slider3, slider4, slider5, slider6];
-  const [index, setIndex] = useState(0);
-
-  const clickPrev = () => {
-    setIndex(index < images.length - 3 ? index + 1 : 0);
-  };
-  const clickNext = () => {
-    setIndex(index < images.length - 3 ? index + 1 : 0);
-  };
+  const text = [
+    `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+  inventore ex, ea quis optio officia facere tempora nulla fuga 1`,
+    `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
+  inventore ex, ea quis optio officia facere tempora nulla fuga
+  molestias neque nemo 2`,
+    `Sapiente inventore ex, ea quis optio officia facere tempora nulla fuga
+  molestias neque nemo eum delectus eos! 3`,
+  ];
 
   return (
     <div className="main">
@@ -109,16 +113,38 @@ const Main = () => {
       </div>
 
       <div className="section-3">
-        <div className="carousel">
-          <button className="carousel-btn-prev" onClick={clickPrev}>
+        <div className="sec-2-carousel">
+          <button
+            className="sec-2-carousel-btn-prev"
+            onClick={() =>
+              setIndexImg(indexImg < images.length - 3 ? indexImg + 1 : 0)
+            }
+          >
             &#60;
           </button>
           <div>
-            <img className="carousel-img" src={images[index]} alt="slide" />
-            <img className="carousel-img" src={images[index + 1]} alt="slide" />
-            <img className="carousel-img" src={images[index + 2]} alt="slide" />
+            <img
+              className="sec-2-carousel-img"
+              src={images[indexImg]}
+              alt="slide"
+            />
+            <img
+              className="sec-2-carousel-img"
+              src={images[indexImg + 1]}
+              alt="slide"
+            />
+            <img
+              className="sec-2-carousel-img"
+              src={images[indexImg + 2]}
+              alt="slide"
+            />
           </div>
-          <button className="carousel-btn-next" onClick={clickNext}>
+          <button
+            className="sec-2-carousel-btn-next"
+            onClick={() =>
+              setIndexImg(indexImg < images.length - 3 ? indexImg + 1 : 0)
+            }
+          >
             &#62;
           </button>
         </div>
@@ -297,7 +323,7 @@ const Main = () => {
             <span>$26.48</span>
           </div>
           <div className="sec-5-text-img flex pr">
-            <div className="sec-5-imgs-3" ></div>
+            <div className="sec-5-imgs-3"></div>
             <div className="sec-5-logos flex abs">
               <img src={searchlogo} alt="magnifier" />
               <img src={favoritelogo} alt="favorite" />
@@ -330,6 +356,32 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <div className="section-6">
+        <div className="sec-6-carousel flex aic">
+          <button
+            className="sec-6-carousel-btn-prev"
+            onClick={() =>
+              setIndexText(indexText - 1 < 0 ? text.length - 1 : indexText - 1)
+            }
+          >
+            &#60;
+          </button>
+          <div className="sec-6-text-container">
+            <h4>CUSTOMERS REVIEWS</h4>
+            <p className="sec-6-p">{text[indexText]}</p>
+            <span>HAPPY CUSTOMER</span>
+          </div>
+          <button
+            className="sec-6-carousel-btn-next"
+            onClick={() =>
+              setIndexText(indexText + 1 >= text.length ? 0 : indexText + 1)
+            }
+          >
+            &#62;
+          </button>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

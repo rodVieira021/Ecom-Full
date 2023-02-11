@@ -1,0 +1,56 @@
+:root {
+  --strong-black: #000;
+  --middle-black: #000000d7;
+  --nav-red: #d41518;
+  --white: #fff;
+  --white-gray: #ffffff;
+  --fade-gray: #808080;
+  --aqua-green: #2ea4a4;
+  --red-btn: #d41518;
+  --fade-btn: #d41518db;
+  --gray-text: #505050ef;
+}
+
+.footer-main {
+  margin: 75px auto;
+}
+
+.footer-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.footer-header h4 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-span-1 {
+  font-size: 12px;
+}
+
+.footer-img {
+  gap: 50px;
+}
+
+.form-container {
+  justify-content: space-between;
+  margin: 50px 0px;
+  background-color: rgba(128, 128, 128, 0.057);
+  border-top: 1px solid #8080805a;
+}
+
+.footer-socials {
+  gap: 15px;
+}
+
+.footer-socials img {
+  width: 20px;
+}
