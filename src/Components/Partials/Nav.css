@@ -113,6 +113,18 @@
   cursor: pointer;
   width: 25px;
   height: 25px;
+  /* z-index: 10; */
+}
+
+.items-count {
+  top: -1px;
+  right: -7px;
+  font-size: 10px;
+  background-color: var(--strong-black);
+  color: var(--white-gray);
+  padding: 2px 4px;
+  border-radius: 50%;
+  /* z-index: 5; */
 }
 
 /* DROPDOWN */
@@ -241,3 +253,5 @@
   background-color: var(--white);
   font-size: 35px;
 }
+
+

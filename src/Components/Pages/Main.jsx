@@ -21,7 +21,7 @@ import searchlogo from "../.././Images/section-5-img/magnifier-67.png";
 import favoritelogo from "../.././Images/section-5-img/favorite-30.png";
 import shufflelogo from "../.././Images/section-5-img/shuffle-48.png";
 import Footer from "../Partials/Footer";
-import cartImg01 from "../../Images/sec4-img7.jpg";
+import CartPopup from "../Partials/CartPopup";
 
 const Main = () => {
   const [indexImg, setIndexImg] = useState(0);
@@ -41,44 +41,24 @@ const Main = () => {
     <div className="main">
       <div className="section-1 black-stripe flex pr">
         <div className="flex aic">
-          <img src={truck} alt="truck" />
+          <img className="black-stripe-img" src={truck} alt="truck" />
           <p>Free Shipping on all orders over $100.</p>
         </div>
 
         <div className="flex aic">
-          <img src={tick} alt="tick" />
+          <img className="black-stripe-img" src={tick} alt="tick" />
           <p>Worldwide Delivery and same day dispatch.</p>
         </div>
 
         <div className="flex aic">
-          <img src={send} alt="send" />
+          <img className="black-stripe-img" src={send} alt="send" />
           <p>Extended Returns Until 10th March.</p>
         </div>
 
-        <div className="cart-popup abs">
-          <div className="cart-popup-product">
-            <img src={cartImg01} alt="break pads" />
-            <h4 className="cart-popup-header">Breaking Pads</h4>
-            <p className="cart-popup-item">Toyota 2022</p>
-            <p className="cart-popup-qty">
-              QTY: <span className="cart-minus">-</span> 1{" "}
-              <span className="cart-plus">+</span>
-            </p>
-            <p className="cart-popup-price">$159.00</p>
-          </div>
-          <div className='cart-popup-bottom'>
-            <div className='cart-popup-total'>
-              <h4>CART TOTAL: </h4>
-              <p>$159.00</p>
-            </div>
-            <div className='cart-popup-bts'>
-              <button></button>
-              <button></button>
-            </div>
-          </div>
-        </div>
 
-        
+
+
+
       </div>
       <div className="hero-main">
         <div className="hero-text">

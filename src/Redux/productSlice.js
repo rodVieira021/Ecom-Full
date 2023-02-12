@@ -3,7 +3,48 @@ import { createSlice } from "@reduxjs/toolkit";
 const productSlice = createSlice({
   name: "product",
   initialState: {
-    items: [],
+    items: [
+      {
+        id: 1,
+        productTitle: "Breaking Pads",
+        productCategory: "Body Parts",
+        productDescription: "Pair of breaking pads",
+        productPrice: 159,
+        productBrand: "Toyota",
+      },
+      {
+        id: 1,
+        productTitle: "",
+        productCategory: "",
+        productDescription: "",
+        productPrice: 1111,
+        productBrand: "",
+      },
+      {
+        id: 1,
+        productTitle: "",
+        productCategory: "",
+        productDescription: "",
+        productPrice: 1111,
+        productBrand: "",
+      },
+      {
+        id: 1,
+        productTitle: "",
+        productCategory: "",
+        productDescription: "",
+        productPrice: 1111,
+        productBrand: "",
+      },
+      {
+        id: 1,
+        productTitle: "",
+        productCategory: "",
+        productDescription: "",
+        productPrice: 1111,
+        productBrand: "",
+      },
+    ],
     cart: [],
   },
   reducers: {

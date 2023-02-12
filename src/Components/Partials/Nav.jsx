@@ -8,10 +8,11 @@ import cartNav from "../../Images/cartNav.png";
 import siteLogo from "../../Images/siteLogo.png";
 import DropdownUsd from "./DropdownUsd";
 import DropdownLang from "./DropdownLang";
-
+import CartPopup from "./CartPopup";
 import { useState } from "react";
 
 const Nav = () => {
+  const [cartDrop, setCartDrop] = useState(false);
   const [usd, setUsd] = useState(false);
   const [lang, setLang] = useState(false);
   const [searchOn, setSearchOn] = useState(false);
@@ -238,24 +239,30 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-        <div className="nav-main-right flex aic">
+        <div className="nav-main-right flex aic pr">
           <img
             className="magnifier-nav"
             src={magnifierNav}
             alt="magnifier"
             onClick={() => setSearchOn(true)}
           />
-          <img className="cart-nav" src={cartNav} alt="cart" />
+          <img
+            className="cart-nav"
+            src={cartNav}
+            alt="cart"
+            onClick={() => setCartDrop(!cartDrop)}
+          />
+          <span className="items-count abs"> 2 </span>
         </div>
+        {cartDrop ? <CartPopup /> : ""}
       </div>
-
       {searchOn ? (
         <div className="search flex aic abs">
           <form className="flex aic">
             <img src={magnifierNav} alt="magnifier" />
             <input
               className="input-form"
-              placeholder="Search for products..."
+              placeholder="Search for products..."  
             />
           </form>
           <button className="btn-close-form" onClick={() => setSearchOn(false)}>

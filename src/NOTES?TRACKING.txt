@@ -12,10 +12,10 @@ how to write vanilla js in react (nav bar color changes)
 {
     id: 1,
     productTitle:  ",
-    productCategory: "
-    productDescription: "
-    productPrice:
-    productBrand:
+    productCategory: ",
+    productDescription: ",
+    productPrice: 1111,
+    productBrand:",
 }
 
 - Products Listing (Cards)

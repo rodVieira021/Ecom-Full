@@ -20,21 +20,12 @@
   height: 35px;
 }
 
-.black-stripe img {
+.black-stripe-img {
   width: 20px;
   margin-right: 5px;
 }
 
-.cart-popup {
-  top: -10px;
-  right: 30px;
-  color: var(--strong-black);
-  background-color: #fff;
-  border: 1px solid rgba(128, 128, 128, 0.187);
-  height: 300px;
-  width: 350px;
-  z-index: 99999;
-}
+/* HERO */
 
 .hero-main {
   background-image: url("../../Images/hero-main.jpg");
@@ -57,6 +48,11 @@
   background-color: rgba(0, 0, 0, 0.21);
   padding: 30px 0;
 }
+
+.hero-text h2 {
+  margin-bottom: 20px;
+}
+
 .hero-main p {
   color: var(--white);
   margin-bottom: 20px;
