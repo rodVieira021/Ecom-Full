@@ -20,8 +20,11 @@ import slider6 from "../.././Images/slider-img/slider6.jpg";
 import searchlogo from "../.././Images/section-5-img/magnifier-67.png";
 import favoritelogo from "../.././Images/section-5-img/favorite-30.png";
 import shufflelogo from "../.././Images/section-5-img/shuffle-48.png";
+import logo1 from "../.././Images/footer-img/brandlogo1.png";
+import logo2 from "../.././Images/footer-img/brandlogo2.png";
+import logo3 from "../.././Images/footer-img/brandlogo3.png";
+import logo4 from "../.././Images/footer-img/brandlogo4.png";
 import Footer from "../Partials/Footer";
-import CartPopup from "../Partials/CartPopup";
 
 const Main = () => {
   const [indexImg, setIndexImg] = useState(0);
@@ -54,11 +57,6 @@ const Main = () => {
           <img className="black-stripe-img" src={send} alt="send" />
           <p>Extended Returns Until 10th March.</p>
         </div>
-
-
-
-
-
       </div>
       <div className="hero-main">
         <div className="hero-text">
@@ -386,6 +384,16 @@ const Main = () => {
             &#62;
           </button>
         </div>
+      </div>
+      <div className="footer-header">
+        <h4>POPULAR CAR MAKERS</h4>
+        <p>all car brands</p>
+      </div>
+      <div className="footer-img flex jcc aic">
+        <img src={logo1} alt="company logo" />
+        <img src={logo2} alt="company logo" />
+        <img src={logo3} alt="company logo" />
+        <img src={logo4} alt="company logo" />
       </div>
       <Footer />
     </div>

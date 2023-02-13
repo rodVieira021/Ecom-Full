@@ -1,11 +1,6 @@
 import React from "react";
 import "../../App.css";
 import "./Footer.css";
-
-import logo1 from "../.././Images/footer-img/brandlogo1.png";
-import logo2 from "../.././Images/footer-img/brandlogo2.png";
-import logo3 from "../.././Images/footer-img/brandlogo3.png";
-import logo4 from "../.././Images/footer-img/brandlogo4.png";
 import fbLogo from "../.././Images/footer-img/icons8-facebook-f.svg";
 import ttLogo from "../.././Images/footer-img/icons8-twitter.svg";
 import pinLogo from "../.././Images/footer-img/icons8-pinterest-p.svg";
@@ -18,16 +13,6 @@ const Footer = () => {
   return (
     <div>
       <div className="footer-main">
-        <div className="footer-header">
-          <h4>POPULAR CAR MAKERS</h4>
-          <p>all car brands</p>
-        </div>
-        <div className="footer-img flex jcc aic">
-          <img src={logo1} alt="company logo" />
-          <img src={logo2} alt="company logo" />
-          <img src={logo3} alt="company logo" />
-          <img src={logo4} alt="company logo" />
-        </div>
         <div className="form-container flex aic">
           <form className="footer-form flex jcc aic">
             <label htmlFor="footer-input">

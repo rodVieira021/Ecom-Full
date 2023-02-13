@@ -1,7 +1,6 @@
 import React from "react";
 import "./Nav.css";
 import "../../App.css";
-
 import telephoneNav from "../../Images/telephoneNav.png";
 import magnifierNav from "../../Images/magnifierNav.png";
 import cartNav from "../../Images/cartNav.png";
@@ -10,6 +9,7 @@ import DropdownUsd from "./DropdownUsd";
 import DropdownLang from "./DropdownLang";
 import CartPopup from "./CartPopup";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [cartDrop, setCartDrop] = useState(false);
@@ -55,10 +55,12 @@ const Nav = () => {
       </div>
 
       <div className="nav-main flex aic">
-        <div className="logo-name flex aic">
-          <img className="site-logo" src={siteLogo} alt="siteLogo" />
-          <p className="siteName">AutoParts</p>
-        </div>
+        <Link to="/">
+          <div className="logo-name flex aic">
+            <img className="site-logo" src={siteLogo} alt="siteLogo" />
+            <p className="siteName">AutoParts</p>
+          </div>
+        </Link>
 
         <div>
           <ul className="ul-nav-2 flex">
@@ -262,7 +264,7 @@ const Nav = () => {
             <img src={magnifierNav} alt="magnifier" />
             <input
               className="input-form"
-              placeholder="Search for products..."  
+              placeholder="Search for products..."
             />
           </form>
           <button className="btn-close-form" onClick={() => setSearchOn(false)}>

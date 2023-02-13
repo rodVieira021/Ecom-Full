@@ -30,3 +30,7 @@ how to write vanilla js in react (nav bar color changes)
 - Dark/Light Mode (local Storage)
 - Notifications 
 - Multi-language
+
+
+---
+how to remove underline from the site name LINK

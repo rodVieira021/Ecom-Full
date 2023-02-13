@@ -85,7 +85,8 @@
   margin-top: 20px;
 }
 
-.cart-popup-btn {
+.cart-popup-btn-1,
+.cart-popup-btn-2 {
   border: none;
   cursor: pointer;
   background-color: var(--red-btn);
@@ -94,7 +95,8 @@
   transition: 0.3s;
 }
 
-.cart-popup-btn:hover {
+.cart-popup-btn-1:hover,
+.cart-popup-btn-2:hover {
   opacity: 0.8;
 }
 

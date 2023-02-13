@@ -3,6 +3,7 @@ import "../../App.css";
 import "./CartPopup.css";
 import editcart from "../../Images/cart/edit-logo.png";
 import closecart from "../../Images/cart/close-logo.png";
+import { Link } from "react-router-dom";
 
 import cartImg01 from "../../Images/sec4-img7.jpg";
 
@@ -36,8 +37,10 @@ const CartPopup = () => {
           <p>$159.00</p>
         </div>
         <div className="cart-popup-btns flex">
-          <button className="cart-popup-btn">VIEW CART</button>
-          <button className="cart-popup-btn">CHECKOUT</button>
+          <Link to="/cart">
+            <button className="cart-popup-btn-1">VIEW CART</button>
+          </Link>
+          <button className="cart-popup-btn-2">CHECKOUT</button>
         </div>
       </div>
     </div>
