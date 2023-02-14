@@ -1,0 +1,25 @@
+.header {
+  text-align: center;
+  background-color: #8080800f;
+  padding: 30px;
+  margin-bottom: 50px;
+  border-top: 1px solid #8080805a;
+  border-bottom: 1px solid #8080805a;
+}
+
+.header-h2 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.left-products {
+  grid-column: 1 / span 2;
+  border-top: 1px solid #8080805a;
+  padding: 50px;
+}
+
+.righ-products {
+  grid-column: 3;
+  padding: 10px;
+  margin: 20px;
+}
