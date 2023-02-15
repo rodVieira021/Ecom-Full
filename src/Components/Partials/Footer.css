@@ -11,9 +11,6 @@
   --gray-text: #505050ef;
 }
 
-.footer-main {
-  margin-top: 75px;
-}
 
 .footer-header {
   text-align: center;
@@ -29,7 +26,6 @@
 
 .form-container {
   justify-content: space-between;
-  margin-top: 50px;
   background-color: #8080800f;
   border-top: 1px solid #8080805a;
   height: 120px;

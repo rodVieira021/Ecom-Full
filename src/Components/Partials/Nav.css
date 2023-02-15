@@ -250,3 +250,7 @@
   background-color: var(--white);
   font-size: 35px;
 }
+
+.nav-main a {
+  text-decoration: none;
+}

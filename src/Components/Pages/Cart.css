@@ -1,3 +1,16 @@
+:root {
+  --strong-black: #000;
+  --middle-black: #000000d7;
+  --nav-red: #d41518;
+  --white: #fff;
+  --white-gray: #ffffff;
+  --fade-gray: #808080;
+  --aqua-green: #2ea4a4;
+  --red-btn: #d41518;
+  --fade-btn: #d41518db;
+  --gray-text: #505050ef;
+}
+
 .header {
   text-align: center;
   background-color: #8080800f;
@@ -20,6 +33,172 @@
 
 .righ-products {
   grid-column: 3;
+}
+.prod-table {
+  text-align: center;
+}
+
+.table-head th {
+  padding: 0 50px;
+  font-weight: 400;
+}
+
+.td-img img {
+  width: 150px;
+}
+
+.td-img p {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.added-prod {
+  color: #8e8e8e;
+}
+
+.added-prod td {
+  padding: 30px;
+}
+
+.added-prod span {
+  padding: 0 15px;
+  font-size: 20px;
+}
+
+.table-x {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.table-x:hover {
+  opacity: 0.8;
+  background-color: gray;
+}
+
+.shipping a,
+.update-shipping {
+  text-decoration: none;
+  color: #5ab5b5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.shipping a:hover,
+.update-shipping:hover {
+  color: var(--middle-black);
+}
+
+.link-shipping {
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.info-shipping {
+  padding: 30px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #8080805a;
+}
+
+.shipping-form {
+  text-align: center;
+}
+
+.shipping-form h4 {
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+.shipping-btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 8px 16px;
+  border: 1px solid var(--middle-black);
+  transition: 0.3s ease-in-out;
+}
+
+.shipping-btn:hover {
+  color: var(--white);
+  background-color: var(--middle-black);
+}
+
+.shipping-inputs {
+  padding-bottom: 30px;
+}
+
+.input-container label {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.shipping-inputs input {
+  width: 300px;
+  height: 30px;
+}
+
+.input-container input {
+  border: 1px solid var(--fade-gray);
+  margin-right: 10px;
+}
+input:focus {
+  outline: none;
+}
+/* RIGHT SIDE */
+
+.text-area-container {
+  border: 1px solid #8080805a;
+  padding: 0 20px 20px 20px;
+  margin: 0 20px 20px 20px;
+}
+.text-area-container label {
   padding: 10px;
+}
+
+.text-area {
+  height: 200px;
+  width: 100%;
+  border-color: #8080805a;
+}
+
+.subtotal {
+  border: 1px solid #8080805a;
+  padding: 20px;
   margin: 20px;
+}
+
+.subtotal-text {
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.taxes-text {
+  color: var(--fade-gray);
+  padding-bottom: 10px;
+}
+
+.check-container {
+  padding-bottom: 20px;
+}
+
+.text-area-btn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 20px;
+  background-color: var(--fade-gray);
+  color: var(--white);
+  width: 100%;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.text-area-btn:hover {
+  opacity: 0.8;
 }
