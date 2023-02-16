@@ -4,11 +4,15 @@
   --nav-red: #d41518;
   --white: #fff;
   --white-gray: #ffffff;
-  --fade-gray: #808080;
+  --fade-gray: #80808039;
   --aqua-green: #2ea4a4;
   --red-btn: #d41518;
   --fade-btn: #d41518db;
-  --gray-text: #505050ef;
+  --border-gray: #8080805a;
+}
+
+.products-container {
+  margin-bottom: 100px;
 }
 
 .header {
@@ -16,8 +20,8 @@
   background-color: #8080800f;
   padding: 30px;
   margin-bottom: 50px;
-  border-top: 1px solid #8080805a;
-  border-bottom: 1px solid #8080805a;
+  border-top: 1px solid var(--border-gray);
+  border-bottom: 1px solid var(--border-gray);
 }
 
 .header-h2 {
@@ -27,8 +31,8 @@
 
 .left-products {
   grid-column: 1 / span 2;
-  border-top: 1px solid #8080805a;
-  padding: 50px;
+  border-top: 1px solid var(--border-gray);
+  margin: 20px;
 }
 
 .righ-products {
@@ -39,7 +43,7 @@
 }
 
 .table-head th {
-  padding: 0 50px;
+  padding: 20px 50px;
   font-weight: 400;
 }
 
@@ -99,7 +103,7 @@
 .info-shipping {
   padding: 30px 0;
   margin-bottom: 30px;
-  border-bottom: 1px solid #8080805a;
+  border-bottom: 1px solid var(--border-gray);
 }
 
 .shipping-form {
@@ -151,7 +155,7 @@ input:focus {
 /* RIGHT SIDE */
 
 .text-area-container {
-  border: 1px solid #8080805a;
+  border: 1px solid var(--border-gray);
   padding: 0 20px 20px 20px;
   margin: 0 20px 20px 20px;
 }
@@ -162,11 +166,11 @@ input:focus {
 .text-area {
   height: 200px;
   width: 100%;
-  border-color: #8080805a;
+  border-color: var(--border-gray);
 }
 
 .subtotal {
-  border: 1px solid #8080805a;
+  border: 1px solid var(--border-gray);
   padding: 20px;
   margin: 20px;
 }
@@ -177,12 +181,12 @@ input:focus {
 }
 
 .taxes-text {
-  color: var(--fade-gray);
+  color: gray;
   padding-bottom: 10px;
 }
 
 .check-container {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .text-area-btn {
@@ -192,7 +196,7 @@ input:focus {
   cursor: pointer;
   background-color: transparent;
   padding: 20px;
-  background-color: var(--fade-gray);
+  background-color: gray;
   color: var(--white);
   width: 100%;
   font-size: 14px;

@@ -1,14 +1,14 @@
 slide down effect USD ENGLISH btn the  apply on cart
 
-redux folder
-write the dropdowns
+redux folder ---
+write the dropdowns ---
 
 
 how to write vanilla js in react (nav bar color changes)
 
 
--Home Page Completion
-- Products Array in Redux
+-Home Page Completion ---
+- Products Array in Redux  ---
 {
     id: 1,
     productTitle:  ",
@@ -18,9 +18,9 @@ how to write vanilla js in react (nav bar color changes)
     productBrand:",
 }
 
-- Products Listing (Cards)
+- Products Listing (Cards) ---
 - Add to Cart (btn + functionality)
-- cart Items count (create card)
+- cart Items count (create card) --
 - Cart Page (Listing + Updating + Deletion (Single + All))
 - Contact + About Page
 - Checkout Page (Address + Payment)
@@ -33,4 +33,14 @@ how to write vanilla js in react (nav bar color changes)
 
 
 ---
-how to remove underline from the site name LINK
+
+
+{
+        id: 1,
+        image: "./Images/cart/breakingpads.jpeg",
+        productTitle: "Breaking Pads",
+        productCategory: "Breaking system",
+        productDescription: "Pair of breaking pads",
+        productPrice: 159,
+        productBrand: "Toyota",
+      },

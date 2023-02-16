@@ -25,6 +25,8 @@ import logo2 from "../.././Images/footer-img/brandlogo2.png";
 import logo3 from "../.././Images/footer-img/brandlogo3.png";
 import logo4 from "../.././Images/footer-img/brandlogo4.png";
 import Footer from "../Partials/Footer";
+import { items } from "../.././Redux/productSlice.js";
+import { useSelector, useDispatch } from "react-redux";
 
 const Main = () => {
   const [indexImg, setIndexImg] = useState(0);
@@ -39,6 +41,10 @@ const Main = () => {
     `Sapiente inventore ex, ea quis optio officia facere tempora nulla fuga
   molestias neque nemo eum delectus eos! 3`,
   ];
+  const products = useSelector(items);
+  const dispatch = useDispatch();
+
+  console.log(products);
 
   return (
     <div className="main">
@@ -300,64 +306,21 @@ const Main = () => {
       <div className="section-5 ">
         <h4 className="sec-5-header">HOT NEW RELEASES</h4>
         <div className="section-5-main flex aic">
-          <div className="sec-5-text-img flex pr">
-            <div className="sec-5-imgs-1"></div>
-            <div className="sec-5-logos flex abs">
-              <img src={searchlogo} alt="magnifier" />
-              <img src={favoritelogo} alt="favorite" />
-              <img src={shufflelogo} alt="shuffle" />
-            </div>
-            <button className="sec-5-btn abs">ADD TO CART</button>
-            <p className="sec-5-p-z">
-              8 Tons Powerful Car Auto Tow Rope Trailer Rope
-            </p>
-            <span>$79.43</span>
-          </div>
-          <div className="sec-5-text-img flex pr">
-            <div className="sec-5-imgs-2"></div>
-            <div className="sec-5-logos flex abs">
-              <img src={searchlogo} alt="magnifier" />
-              <img src={favoritelogo} alt="favorite" />
-              <img src={shufflelogo} alt="shuffle" />
-            </div>
-            <button className="sec-5-btn abs">ADD TO CART</button>
-            <p className="sec-5-p-z">
-              Air Pressure Gauge Heavy Duty Best For Car
-            </p>
-            <span>$26.48</span>
-          </div>
-          <div className="sec-5-text-img flex pr">
-            <div className="sec-5-imgs-3"></div>
-            <div className="sec-5-logos flex abs">
-              <img src={searchlogo} alt="magnifier" />
-              <img src={favoritelogo} alt="favorite" />
-              <img src={shufflelogo} alt="shuffle" />
-            </div>
-            <button className="sec-5-btn abs">ADD TO CART</button>
-            <p className="sec-5-p-z">
-              Air Pump MTB Motorcycle Car Basketball Bike
-            </p>
-            <span>$79.43</span>
-          </div>
-          <div className="sec-5-text-img flex pr">
-            <div className="sec-5-imgs-4"></div>
-            <div className="sec-5-logos flex abs">
-              <img
-                className="sec-5-logo-img"
-                src={searchlogo}
-                alt="magnifier"
-              />
-              <img
-                className="sec-5-logo-img"
-                src={favoritelogo}
-                alt="favorite"
-              />
-              <img className="sec-5-logo-img" src={shufflelogo} alt="shuffle" />
-            </div>
-            <button className="sec-5-btn abs">ADD TO CART</button>
-            <p className="sec-5-p-z">Honeywell Move Pure Car Air Purifier</p>
-            <span>$105.90</span>
-          </div>
+          {products.map((prod) => {
+            return (
+              <div className="sec-5-text-img flex pr">
+                <img src={prod.Image} className="sec-5-imgs" alt="product" />
+                <div className="sec-5-logos flex abs">
+                  <img src={searchlogo} alt="magnifier" />
+                  <img src={favoritelogo} alt="favorite" />
+                  <img src={shufflelogo} alt="shuffle" />
+                </div>
+                <button className="sec-5-btn abs">ADD TO CART</button>
+                <p className="sec-5-p-z">{prod.Title}</p>
+                <span>{prod.Price}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
       <div className="section-6">

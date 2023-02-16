@@ -354,7 +354,14 @@
   background-color: var(--middle-black);
 }
 
-.sec-5-imgs-1 {
+
+.sec-5-imgs{
+  width: 250px;
+  height: 250px;
+  visibility: visible;
+}
+
+/* .sec-5-imgs-1 {
   background-image: url("../.././Images/section-5-img/1a.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -408,7 +415,7 @@
 
 .sec-5-text-img:hover .sec-5-imgs-4 {
   background-image: url("../.././Images/section-5-img/4b.jpg");
-}
+} */
 
 /* SECTION 6 */
 
