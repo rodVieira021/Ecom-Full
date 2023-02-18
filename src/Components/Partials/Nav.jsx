@@ -10,13 +10,15 @@ import DropdownLang from "./DropdownLang";
 import CartPopup from "./CartPopup";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { cart } from "../../Redux/productSlice";
 
 const Nav = () => {
   const [cartDrop, setCartDrop] = useState(false);
   const [usd, setUsd] = useState(false);
   const [lang, setLang] = useState(false);
   const [searchOn, setSearchOn] = useState(false);
-
+  const cartCount = useSelector(cart);
   return (
     <div className="Nav-div pr">
       <div className="Nav-red-banner flex aic">
@@ -254,7 +256,11 @@ const Nav = () => {
             alt="cart"
             onClick={() => setCartDrop(!cartDrop)}
           />
-          <span className="items-count abs"> 2 </span>
+          {cartCount <= 0 ? (
+            ""
+          ) : (
+            <span className="items-count abs">{cartCount.length}</span>
+          )}
         </div>
         {cartDrop ? <CartPopup /> : ""}
       </div>

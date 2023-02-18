@@ -19,10 +19,10 @@ how to write vanilla js in react (nav bar color changes)
 }
 
 - Products Listing (Cards) ---
-- Add to Cart (btn + functionality)
+- Add to Cart (btn + functionality)--
 - cart Items count (create card) --
-- Cart Page (Listing + Updating + Deletion (Single + All))
-- Contact + About Page
+- Cart Page (Listing + Updating + Deletion (Single + All))--
+- Contact + About Page 
 - Checkout Page (Address + Payment)
 - On submission order placement
 - Wishlist functionality (Heart Button)Redux[] checkbox animation

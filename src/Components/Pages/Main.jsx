@@ -25,7 +25,7 @@ import logo2 from "../.././Images/footer-img/brandlogo2.png";
 import logo3 from "../.././Images/footer-img/brandlogo3.png";
 import logo4 from "../.././Images/footer-img/brandlogo4.png";
 import Footer from "../Partials/Footer";
-import { items } from "../.././Redux/productSlice.js";
+import { addToCart, items } from "../.././Redux/productSlice.js";
 import { useSelector, useDispatch } from "react-redux";
 
 const Main = () => {
@@ -43,8 +43,6 @@ const Main = () => {
   ];
   const products = useSelector(items);
   const dispatch = useDispatch();
-
-  console.log(products);
 
   return (
     <div className="main">
@@ -315,7 +313,12 @@ const Main = () => {
                   <img src={favoritelogo} alt="favorite" />
                   <img src={shufflelogo} alt="shuffle" />
                 </div>
-                <button className="sec-5-btn abs">ADD TO CART</button>
+                <button
+                  className="sec-5-btn abs"
+                  onClick={() => dispatch(addToCart(prod))}
+                >
+                  ADD TO CART
+                </button>
                 <p className="sec-5-p-z">{prod.Title}</p>
                 <span>{prod.Price}</span>
               </div>

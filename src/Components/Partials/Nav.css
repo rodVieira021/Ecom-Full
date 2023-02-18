@@ -24,6 +24,8 @@
   gap: 10px;
 }
 
+
+
 .div-usd,
 .div-lang {
   background-color: var(--white-gray);
@@ -120,7 +122,7 @@
   font-size: 10px;
   background-color: var(--strong-black);
   color: var(--white-gray);
-  padding: 2px 4px;
+  padding: 2px 5px;
   border-radius: 50%;
 }
 

@@ -11,8 +11,18 @@
   --border-gray: #8080805a;
 }
 
+.empty-cart-page {
+  padding: 50px;
+  text-align: center;
+  font-size: 24px;
+}
+
 .products-container {
   margin-bottom: 100px;
+}
+
+.products-table {
+  margin-bottom: 15px;
 }
 
 .header {
@@ -24,7 +34,7 @@
   border-bottom: 1px solid var(--border-gray);
 }
 
-.header-h2 {
+.header h2 {
   font-weight: 400;
   font-size: 25px;
 }
@@ -65,25 +75,34 @@
 }
 
 .added-prod span {
-  padding: 0 15px;
+  padding: 0 10px;
   font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background-color: var(--fade-gray);
+}
+
+.p-qty {
+  display: inline;
+  background-color: #fff;
+  padding: 0 10px;
+  font-size: 14px;
 }
 
 .table-x {
   border: none;
-  background-color: transparent;
-  padding: 5px;
+  background-color: gray;
+  padding: 5px 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
 .table-x:hover {
   opacity: 0.8;
-  background-color: gray;
 }
 
 .shipping a,
-.update-shipping {
+.clear-cart {
   text-decoration: none;
   color: #5ab5b5;
   transition: 0.3s;
@@ -91,7 +110,7 @@
 }
 
 .shipping a:hover,
-.update-shipping:hover {
+.clear-cart:hover {
   color: var(--middle-black);
 }
 
@@ -178,15 +197,29 @@ input:focus {
 .subtotal-text {
   justify-content: space-between;
   padding-bottom: 20px;
+  align-items: flex-end;
+}
+
+.total {
+  font-size: 24px;
+}
+
+.total span{
+  font-size: 20px;
 }
 
 .taxes-text {
   color: gray;
   padding-bottom: 10px;
+  font-style: italic;
 }
 
 .check-container {
   padding-bottom: 25px;
+}
+
+.checkbox-terms {
+  margin-right: 5px;
 }
 
 .text-area-btn {

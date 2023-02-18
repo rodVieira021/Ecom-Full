@@ -4,53 +4,85 @@ import "./Cart.css";
 import payment from "../.././Images/cart/payment-img.jpg";
 import { Link } from "react-router-dom";
 import Footer from "../Partials/Footer";
-
-import cartimg from "../.././Images/cart/tiresgm.jpeg";
+import { cart } from "../../Redux/productSlice";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  removeFromCart,
+  cartMinusBtn,
+  cartPlusBtn,
+  clearCart,
+} from "../../Redux/productSlice";
 
 const Cart = () => {
+  const newCart = useSelector(cart);
+  const dispatch = useDispatch();
+
   return (
     <>
       <div className="header">
-        <h2 className="header-h2">YOUR CART</h2>
+        <h2>YOUR CART</h2>
       </div>
       <div className="products-container grid col-3">
         <div className="left-products">
-          <table className="prod-table">
-            <thead className="table-head">
-              <tr>
-                <th>PRODUCT</th>
-                <th>PRICE</th>
-                <th>QUANTITY</th>
-                <th>TOTAL</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="added-prod">
-                <td className="td-img flex aic jcc">
-                  <div>
-                    <img src={cartimg} alt="cart" />
-                  </div>
-                  <div>
-                    <p>Product Name</p>
-                    <p>Brand: GM</p>
-                  </div>
-                </td>
-                <td>$1450.00</td>
-                <td>
-                  <span>-</span> 2 <span>+</span>
-                </td>
-                <td>
-                  $2900.00 <button className="table-x">X</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          {newCart.length <= 0 ? (
+            <p className="empty-cart-page">YOUR CART IS EMPTY</p>
+          ) : (
+            <table className="prod-table">
+              <thead className="table-head">
+                <tr>
+                  <th>PRODUCT</th>
+                  <th>PRICE</th>
+                  <th>QUANTITY</th>
+                  <th>TOTAL</th>
+                </tr>
+              </thead>
+              <tbody>
+                {newCart.map((items) => {
+                  return (
+                    <tr className="added-prod">
+                      <td className="td-img flex aic jcc">
+                        <div>
+                          <img src={items.Image} alt="cart" />
+                        </div>
+                        <div>
+                          <p>{items.Title}</p>
+                          <p>{items.Brand}</p>
+                        </div>
+                      </td>
+                      <td>${items.Price}</td>
+                      <td>
+                        <span onClick={() => dispatch(cartMinusBtn(items.id))}>
+                          -
+                        </span>
+                        <p className="p-qty">{items.Qty}</p>
+                        <span onClick={() => dispatch(cartPlusBtn(items.id))}>
+                          +
+                        </span>
+                      </td>
+                      <td>
+                        ${Math.trunc(items.Price * items.Qty)}{" "}
+                        <button
+                          className="table-x"
+                          onClick={() => dispatch(removeFromCart(items.id))}
+                        >
+                          X
+                        </button>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          )}
+
           <div className="shipping">
             <div className="link-shipping flex aic">
               <Link to="/">
                 <p className="go-back-p"> &#60; Continue Shopping</p>
               </Link>
-              <p className="update-shipping">&#8634; Update</p>
+              <p className="clear-cart" onClick={() => dispatch(clearCart())}>
+                Clear Cart
+              </p>
             </div>
 
             <p className="info-shipping">
@@ -87,7 +119,12 @@ const Cart = () => {
             <div className="subtotal">
               <div className="subtotal-text flex">
                 <h4>SUBTOTAL</h4>
-                <p className="total">$750.00</p>
+                <p className="total">
+                  <span>$</span>
+                  {newCart.reduce((acc, price) => {
+                    return Math.trunc(Number(acc + price.Price * price.Qty));
+                  }, 0)}
+                </p>
               </div>
               <p className="taxes-text">
                 Shipping & taxes calculated at checkout
@@ -105,7 +142,6 @@ const Cart = () => {
         </div>
       </div>
       <Footer />
-      <div className="right-colum"></div>
     </>
   );
 };
