@@ -53,12 +53,13 @@
 }
 
 .table-head th {
-  padding: 20px 50px;
+  padding: 8px 50px;
   font-weight: 400;
+  border-bottom: 1px solid var(--border-gray);
 }
 
 .td-img img {
-  width: 150px;
+  width: 120px;
 }
 
 .td-img p {
@@ -71,7 +72,8 @@
 }
 
 .added-prod td {
-  padding: 30px;
+  border-bottom: 1px solid var(--border-gray);
+  margin-top: 20px;
 }
 
 .added-prod span {
@@ -204,7 +206,7 @@ input:focus {
   font-size: 24px;
 }
 
-.total span{
+.total span {
   font-size: 20px;
 }
 
@@ -238,4 +240,8 @@ input:focus {
 
 .text-area-btn:hover {
   opacity: 0.8;
+}
+
+.subtotal a {
+  text-decoration: none;
 }

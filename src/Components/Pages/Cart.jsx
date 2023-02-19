@@ -135,7 +135,9 @@ const Cart = () => {
                   I agree with the terms and conditions
                 </label>
               </div>
-              <button className="text-area-btn">CHECKOUT</button>
+              <Link to="/checkout">
+                <button className="text-area-btn">CHECKOUT</button>
+              </Link>
               <img src={payment} alt="payments methods" />
             </div>
           </form>

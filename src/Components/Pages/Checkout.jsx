@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Footer from "../Partials/Footer";
 import { cart } from "../../Redux/productSlice";
 import { useSelector, useDispatch } from "react-redux";
+import payment from "../.././Images/cart/payment-img.jpg";
 
 const Checkout = () => {
   const checkoutCart = useSelector(cart);
@@ -15,7 +16,7 @@ const Checkout = () => {
       </div>
       <div className="main-container grid col-2">
         <div className="left">
-          <h4>
+          <h4 className="left-header">
             {" "}
             RETURNING CUSTOMER? <Link>CLICK HERE TO LOGIN</Link>
           </h4>
@@ -29,7 +30,7 @@ const Checkout = () => {
               <form className="inputs-1 flex">
                 <label htmlFor="email-input">Email address</label>
                 <input type="text" className="email-input" />
-                <div className="flex">
+                <div className="check-div flex">
                   <input type="checkbox" className="check-login" />
                   <label htmlFor="check-login">Remember me!</label>
                 </div>
@@ -37,7 +38,7 @@ const Checkout = () => {
               <div className="inputs-2 flex">
                 <label htmlFor="password-input">Password *</label>
                 <input type="text" className="password-input" />
-                <Link href="1">Forgot your password?</Link>
+                <Link href="pass-forgot">Forgot your password?</Link>
               </div>
               <button className="login-submit">SUBMIT</button>
             </form>
@@ -58,7 +59,7 @@ const Checkout = () => {
                 <input type="text" className="postcode" />
                 <label htmlFor="region">Region / State</label>
                 <input type="text" className="region" />
-                <div className="flex">
+                <div className="div-check flex ">
                   <input type="checkbox" className="check-form-left" />
                   <label htmlFor="check-form-left">Create an account?</label>
                 </div>
@@ -76,24 +77,29 @@ const Checkout = () => {
                 <input type="text" className="country" />
               </div>
             </form>
-            <p>Order Notes</p>
-            <textarea></textarea>
+            <div className="order-notes">
+              <p>Order Notes</p>
+              <textarea></textarea>
+            </div>
           </div>
         </div>
 
         <div className="right">
-          <h4>
+          <h4 className="right-header">
             HAVE A COUPON?<Link>CLICK HERE TO ENTER YOUR CODE</Link>
           </h4>
-          <p>Enter your counpon code if you have one</p>
-          <form className="form-coupon">
-            <label htmlFor="input-coupon">Coupon</label>
-            <input type="text" className="input-coupon" />
-            <button>APPLY COUPON</button>
-          </form>
+          <div className="form-container-cupoun">
+            <p>Enter your coupon code if you have one</p>
+            <form className="form-coupon flex">
+              <label htmlFor="input-coupon">* Coupon</label>
+              <input type="text" className="input-coupon" />
+              <button className="coupoun-btn">APPLY COUPON</button>
+            </form>
+          </div>
           <div className="order">
+            <h4>YOUR ORDER</h4>
             <table className="prod-table">
-              <thead className="table-head">
+              <thead className="table-head-coupon">
                 <tr>
                   <th>PRODUCT</th>
                   <th>PRICE</th>
@@ -101,7 +107,7 @@ const Checkout = () => {
                   <th>TOTAL</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="table-body">
                 {checkoutCart.map((items) => {
                   return (
                     <tr>
@@ -112,24 +118,54 @@ const Checkout = () => {
                     </tr>
                   );
                 })}
-                <div className=" total-container">
-                  <p>Discount ${}</p>
-                  <p>
-                    Total: $
-                    {checkoutCart.reduce((acc, price) => {
-                      return Math.trunc(Number(acc + price.Price * price.Qty));
-                    }, 0)}
-                  </p>
-                </div>
               </tbody>
             </table>
+            <div className="total-container">
+              <p>Discount ${}</p>
+              <p>
+                Total: $
+                {checkoutCart.reduce((acc, price) => {
+                  return Math.trunc(Number(acc + price.Price * price.Qty));
+                }, 0)}
+              </p>
+            </div>
           </div>
           <div className="payment">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <button>PLACE ORDER</button>
+            <h4>PAYMENT DETAILS</h4>
+            <form className="cc-form grid col-2">
+              <div className="cc-left-div">
+                <label htmlFor="ccName">Name on Card</label>
+                <input type="text" className="cc-name" />
+
+                <label htmlFor="cc-number">Credit Card Number</label>
+                <input type="number" className="cc-number" />
+
+                <label htmlFor="cc-number">Expiration Date</label>
+                <input type="date" className="cc-exp" />
+              </div>
+              <div className="cc-right-div">
+                <label htmlFor="cc-number">Credit Card Type</label>
+                <input
+                  type="text"
+                  className="cc-number"
+                  placeholder="-----Please Select-----"
+                />
+
+                <label htmlFor="cc-ccv">CCV code</label>
+                <input
+                  type="text"
+                  className="cc-ccv"
+                  placeholder="Card Verification Number"
+                />
+
+                <img
+                  src={payment}
+                  alt="payments-methonds"
+                  className="payments-methonds"
+                />
+              </div>
+            </form>
+            <button className="place-order-btn">PLACE ORDER</button>
           </div>
         </div>
       </div>
