@@ -52,15 +52,18 @@
   opacity: 0.8;
 }
 
-.form-login,
 .form-container-cupoun {
-  padding: 20px;
+  padding: 20px 20px 85px 20px;
   background-color: var(--fade-gray);
-  margin-bottom: 15px;
 }
 
 .form-login p {
   margin-bottom: 20px;
+}
+
+.form-text {
+  padding: 20px;
+  background-color: var(--fade-gray);
 }
 
 .inputs-2 a {
@@ -159,7 +162,6 @@
 /* RIGHT */
 
 .form-container-cupoun {
-  margin-bottom: 80px;
 }
 
 .form-container-cupoun p {
@@ -206,6 +208,7 @@
 
 .table-body td:first-child {
   text-align: left;
+  padding: 5px;
 }
 
 .total-container {
