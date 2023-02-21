@@ -12,6 +12,8 @@ const Checkout = () => {
   const checkoutCart = useSelector(cart);
   const [hreturning, setHreturning] = useState({ display: "none" });
   const [hcoupon, setHcoupon] = useState({ display: "none" });
+  const [discount, setDiscount] = useState("");
+  const [submitDiscount, setSubmitDiscount] = useState("");
 
   const changeReturning = () => {
     setHreturning({ display: "block" });
@@ -19,6 +21,16 @@ const Checkout = () => {
   const changeCoupon = () => {
     setHcoupon({ display: "block" });
   };
+  const btnCoupon = (e) => {
+    e.preventDefault();
+    setSubmitDiscount(discount);
+    setDiscount("");
+  };
+
+  const sum = checkoutCart.reduce((acc, price) => {
+    return Math.trunc(Number(acc + price.Price * price.Qty));
+  }, 0);
+  const tenPercent = sum * 0.1;
 
   return (
     <div>
@@ -40,7 +52,7 @@ const Checkout = () => {
                 the Billing & Shipping section.
               </p>
 
-              <form className="form-left grid col-2">
+              <div className="form-left grid col-2">
                 <form className="inputs-1 flex">
                   <label htmlFor="email-input">Email address</label>
                   <input type="text" className="email-input" />
@@ -55,7 +67,7 @@ const Checkout = () => {
                   <Link href="pass-forgot">Forgot your password?</Link>
                 </div>
                 <button className="login-submit">SUBMIT</button>
-              </form>
+              </div>
             </div>
           </div>
 
@@ -111,8 +123,15 @@ const Checkout = () => {
             <p>Enter your coupon code if you have one</p>
             <form className="form-coupon flex">
               <label htmlFor="input-coupon">* Coupon</label>
-              <input type="text" className="input-coupon" />
-              <button className="coupoun-btn">APPLY COUPON</button>
+              <input
+                value={discount}
+                onChange={(e) => setDiscount(e.target.value)}
+                type="text"
+                className="input-coupon"
+              />
+              <button onClick={btnCoupon} className="coupoun-btn">
+                APPLY COUPON
+              </button>
             </form>
           </div>
           <div className="order">
@@ -140,13 +159,16 @@ const Checkout = () => {
               </tbody>
             </table>
             <div className="total-container">
-              <p>Discount ${}</p>
-              <p>
-                Total: $
-                {checkoutCart.reduce((acc, price) => {
-                  return Math.trunc(Number(acc + price.Price * price.Qty));
-                }, 0)}
-              </p>
+              {submitDiscount === "discount10" ? (
+                <div>
+                  <p>Total: ${sum}</p>
+                  <p>With discount: ${sum - tenPercent}</p>
+                </div>
+              ) : (
+                <div>
+                  <p>Total: ${sum}</p>
+                </div>
+              )}
             </div>
           </div>
           <div className="payment">
