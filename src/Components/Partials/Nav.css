@@ -5,6 +5,7 @@
   z-index: 99999999;
   background-color: #fff;
   width: 100%;
+
 }
 
 .Nav-red-banner {
@@ -23,8 +24,6 @@
   list-style: none;
   gap: 10px;
 }
-
-
 
 .div-usd,
 .div-lang {
@@ -58,7 +57,6 @@
 .nav-main {
   justify-content: space-between;
   padding: 5px 28px;
-  max-width: 1500px;
 }
 
 .ul-nav-1 {
@@ -198,7 +196,7 @@
 .ul-drop li::before {
   content: "";
   display: inline-block;
-  width: 0px;
+  width: 40x;
   height: 1px;
   margin: 0 4px;
   vertical-align: middle;
@@ -256,5 +254,3 @@
 .nav-main a {
   text-decoration: none;
 }
-
-

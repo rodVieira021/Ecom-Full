@@ -20,7 +20,7 @@ const Nav = () => {
   const [searchOn, setSearchOn] = useState(false);
   const cartCount = useSelector(cart);
   return (
-    <div className="Nav-div pr">
+    <div className="Nav-div">
       <div className="Nav-red-banner flex aic">
         <div className="red-banner-left-info flex aic">
           <ul className="ul-usd-nav flex pr">
@@ -68,7 +68,9 @@ const Nav = () => {
           <ul className="ul-nav-2 flex">
             <li>
               <div href="1" className="hover pr">
-                <p>HOME</p>
+                <Link to={"/"}>
+                  <p>HOME</p>
+                </Link>
                 <div className="drop-1 dropdown-nav-1 grid col-4 abs">
                   <ul className="ul-drop">
                     <li className="li-title">HOME GROUP 1</li>

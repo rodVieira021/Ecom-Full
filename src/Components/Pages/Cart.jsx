@@ -40,7 +40,7 @@ const Cart = () => {
                 {newCart.map((items) => {
                   return (
                     <tr className="added-prod">
-                      <td className="td-img flex aic jcc">
+                      <td className="td-img flex aic">
                         <div>
                           <img src={items.Image} alt="cart" />
                         </div>
