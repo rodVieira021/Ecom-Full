@@ -2,6 +2,9 @@ import React from "react";
 import "./Nav.css";
 import "../../App.css";
 import telephoneNav from "../../Images/telephoneNav.png";
+import navsmallmenu from "../../Images/menu-small-nav.png";
+import navsmallx from "../../Images/menu-small-x.png";
+import navsmalluser from "../../Images/small-nav-user.png";
 import magnifierNav from "../../Images/magnifierNav.png";
 import cartNav from "../../Images/cartNav.png";
 import siteLogo from "../../Images/siteLogo.png";
@@ -18,7 +21,14 @@ const Nav = () => {
   const [usd, setUsd] = useState(false);
   const [lang, setLang] = useState(false);
   const [searchOn, setSearchOn] = useState(false);
+  const [openSmallMenu, setOpenSmallMenu] = useState({ display: "none" });
+  const [closeSmallMenu, setCloseSmallMenu] = useState({ display: "none" });
   const cartCount = useSelector(cart);
+
+  const showMenu = () => {
+    setOpenSmallMenu({ display: "block" });
+  };
+
   return (
     <div className="Nav-div">
       <div className="Nav-red-banner flex aic">
@@ -41,7 +51,8 @@ const Nav = () => {
         <div className="red-banner-middle">
           <p>WORLDWIDE EXPRESS SHIPPING</p>
         </div>
-        <div>
+        <div className="nav-login">
+          <img className="nav-small-user" src={navsmalluser} alt="user-icon" />
           <ul className="ul-nav-1 flex aic">
             <li>
               <a href="#">LOGIN</a>
@@ -57,6 +68,25 @@ const Nav = () => {
       </div>
 
       <div className="nav-main flex aic">
+        <div className="small-nav pr">
+          <img
+            onClick={() => showMenu()}
+            className="small-nav-img"
+            src={navsmallmenu}
+            alt="menu-small"
+          />
+          <img className="small-nav-x" src={navsmallx} alt="menu-small-x" />
+          <div style={openSmallMenu} className="small-menu abs">
+            <ul className="small-nav-ul">
+              <li>HOME</li>
+              <li>SHOP</li>
+              <li>PRODUCT</li>
+              <li>PAGES</li>
+              <li>BLOG</li>
+              <li>BUY NOW!</li>
+            </ul>
+          </div>
+        </div>
         <Link to="/">
           <div className="logo-name flex aic">
             <img className="site-logo" src={siteLogo} alt="siteLogo" />
@@ -64,7 +94,7 @@ const Nav = () => {
           </div>
         </Link>
 
-        <div>
+        <div className="drops-container">
           <ul className="ul-nav-2 flex">
             <li>
               <div href="1" className="hover pr">

@@ -121,9 +121,13 @@ const Main = () => {
       </div>
 
       <div className="section-3">
-        <div className="sec-2-carousel">
+        <div className='section-3-header'>
+          <h4>What are you looking for</h4>
+          <p>Solutions for a better driving experience</p>
+        </div>
+        <div className="sec-3-carousel">
           <button
-            className="sec-2-carousel-btn-prev"
+            className="sec-3-carousel-btn-prev"
             onClick={() =>
               setIndexImg(indexImg < images.length - 3 ? indexImg + 1 : 0)
             }
@@ -132,23 +136,23 @@ const Main = () => {
           </button>
           <div>
             <img
-              className="sec-2-carousel-img"
+              className="sec-3-carousel-img"
               src={images[indexImg]}
               alt="slide"
             />
             <img
-              className="sec-2-carousel-img"
+              className="sec-3-carousel-img"
               src={images[indexImg + 1]}
               alt="slide"
             />
             <img
-              className="sec-2-carousel-img"
+              className="sec-3-carousel-img"
               src={images[indexImg + 2]}
               alt="slide"
             />
           </div>
           <button
-            className="sec-2-carousel-btn-next"
+            className="sec-3-carousel-btn-next"
             onClick={() =>
               setIndexImg(indexImg < images.length - 3 ? indexImg + 1 : 0)
             }
@@ -163,7 +167,8 @@ const Main = () => {
           <h4>Popular Categories</h4>
           <p>Replacement Parts</p>
         </div>
-        <div className="gr-container-4 grid col-4">
+
+        <div className="grid-sec-4 grid col-4">
           <div className="card">
             <img
               src="http://annimexweb.com/items/belle/assets/images/autoparts/categories-img1.jpg"
