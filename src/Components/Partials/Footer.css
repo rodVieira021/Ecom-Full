@@ -166,6 +166,7 @@ label {
 
   .footer-bottom h4 {
     border-bottom: 1px solid transparent;
+    cursor: pointer;
   }
 
   .footer-bottom h4:hover {
@@ -211,6 +212,7 @@ label {
 
   .footer-bottom h4 {
     border-bottom: 1px solid transparent;
+    cursor: pointer;
   }
 
   .footer-bottom h4:hover {
@@ -226,5 +228,4 @@ label {
   .footer-input {
     max-width: 220px;
   }
-
 }

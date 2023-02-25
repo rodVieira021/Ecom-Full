@@ -130,7 +130,6 @@
   z-index: 999999999;
 }
 .small-nav-img {
-  cursor: pointer;
   width: 30px;
 }
 .small-menu {
@@ -324,7 +323,6 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-
   .small-nav,
   .nav-small-user {
     display: block;
@@ -340,12 +338,7 @@
   }
 }
 
-
-
-
-
 @media (min-width: 769px) and (max-width: 990px) {
-
   .small-nav,
   .nav-small-user {
     display: block;
@@ -361,11 +354,8 @@
   }
 }
 
-
 @media (min-width: 991px) and (max-width: 1250px) {
-
   .Nav-red-banner {
     padding: 8px 15px;
   }
-
 }
