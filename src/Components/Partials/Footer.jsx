@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom-container flex jcc">
-        <div className="footer-bottom flex  aic">
+        <div className="footer-bottom flex aic">
           <div>
             <h4 className="li-header">Quick Shop</h4>
             <ul className="ul-footer">

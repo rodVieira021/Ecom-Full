@@ -22,11 +22,22 @@ const Nav = () => {
   const [lang, setLang] = useState(false);
   const [searchOn, setSearchOn] = useState(false);
   const [openSmallMenu, setOpenSmallMenu] = useState({ display: "none" });
-  const [closeSmallMenu, setCloseSmallMenu] = useState({ display: "none" });
+  const [hideMenu, setHideMenu] = useState({ display: "block" });
+  const [menuX, setMenuX] = useState({ display: "none" });
   const cartCount = useSelector(cart);
 
   const showMenu = () => {
-    setOpenSmallMenu({ display: "block" });
+    setOpenSmallMenu({
+      display: "block",
+    });
+    setHideMenu({ display: "none" });
+    setMenuX({ display: "block" });
+  };
+
+  const closeMenu = () => {
+    setOpenSmallMenu({ display: "none" });
+    setHideMenu({ display: "block" });
+    setMenuX({ display: "none" });
   };
 
   return (
@@ -70,12 +81,19 @@ const Nav = () => {
       <div className="nav-main flex aic">
         <div className="small-nav pr">
           <img
+            style={hideMenu}
             onClick={() => showMenu()}
             className="small-nav-img"
             src={navsmallmenu}
             alt="menu-small"
           />
-          <img className="small-nav-x" src={navsmallx} alt="menu-small-x" />
+          <img
+            style={menuX}
+            onClick={() => closeMenu()}
+            className="small-nav-x"
+            src={navsmallx}
+            alt="menu-small-x"
+          />
           <div style={openSmallMenu} className="small-menu abs">
             <ul className="small-nav-ul">
               <li>HOME</li>

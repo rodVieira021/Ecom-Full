@@ -134,7 +134,7 @@ const Main = () => {
           >
             &#60;
           </button>
-          <div>
+          <div className='sec-3-carousel-img-container'>
             <img
               className="sec-3-carousel-img"
               src={images[indexImg]}

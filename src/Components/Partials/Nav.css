@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   font-family: "Montserrat", sans-serif;
-  z-index: 99999999;
+  z-index: 9999999999;
   background-color: #fff;
   width: 100%;
 }
@@ -55,6 +55,7 @@
 
 .nav-main {
   justify-content: space-between;
+  padding: 0 10px;
 }
 
 .ul-nav-1 {
@@ -126,13 +127,15 @@
 
 .small-nav {
   display: none;
+  z-index: 999999999;
 }
 .small-nav-img {
   cursor: pointer;
-  padding-left: 10px;
+  width: 30px;
 }
 .small-menu {
-  top: 41px;
+  top: 34px;
+  left: -10px;
   height: 100vh;
   width: 300px;
   background-color: #fff;
@@ -163,7 +166,8 @@
 }
 
 .small-nav-x {
-  /* display: none; */
+  padding-left: 10px;
+  width: 30px;
 }
 
 .nav-small-user {
@@ -308,7 +312,6 @@
   .nav-small-user {
     display: block;
   }
-
   .Nav-red-banner {
     padding: 8px 5px;
   }
@@ -318,4 +321,51 @@
   .red-banner-middle {
     display: none;
   }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .small-nav,
+  .nav-small-user {
+    display: block;
+  }
+  .Nav-red-banner {
+    padding: 8px 5px;
+  }
+  .drops-container,
+  .ul-nav-1,
+  .ul-nav-1 li,
+  .red-banner-middle {
+    display: none;
+  }
+}
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 990px) {
+
+  .small-nav,
+  .nav-small-user {
+    display: block;
+  }
+  .Nav-red-banner {
+    padding: 8px 15px;
+  }
+  .drops-container,
+  .ul-nav-1,
+  .ul-nav-1 li,
+  .red-banner-middle {
+    display: none;
+  }
+}
+
+
+@media (min-width: 991px) and (max-width: 1250px) {
+
+  .Nav-red-banner {
+    padding: 8px 15px;
+  }
+
 }

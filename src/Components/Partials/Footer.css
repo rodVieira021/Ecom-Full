@@ -11,7 +11,6 @@
   --gray-text: #505050ef;
 }
 
-
 .footer-header {
   text-align: center;
   margin-bottom: 50px;
@@ -125,4 +124,107 @@ label {
   background-color: var(--strong-black);
   padding: 30px 0px;
   text-align: center;
+}
+
+/* MEDIAS */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .form-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-form {
+    margin-left: 0;
+    padding: 0 5px;
+  }
+
+  #footer-span-1 {
+    font-size: 5px;
+  }
+
+  #footer-span-2 {
+    font-size: 10px;
+  }
+
+  .footer-btn {
+    padding: 10px 10px;
+  }
+
+  .footer-bottom ul {
+    display: none;
+  }
+
+  .footer-input {
+    max-width: 110px;
+  }
+
+  .footer-bottom {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-bottom h4 {
+    border-bottom: 1px solid transparent;
+  }
+
+  .footer-bottom h4:hover {
+    border-bottom: 1px solid var(--white-gray);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .form-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-form {
+    margin-left: 0;
+    padding: 0 5px;
+  }
+
+  #footer-span-1 {
+    font-size: 5px;
+  }
+
+  #footer-span-2 {
+    font-size: 10px;
+  }
+
+  .footer-btn {
+    padding: 10px 10px;
+  }
+
+  .footer-bottom ul {
+    display: none;
+  }
+
+  .footer-input {
+    max-width: 110px;
+  }
+
+  .footer-bottom {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-bottom h4 {
+    border-bottom: 1px solid transparent;
+  }
+
+  .footer-bottom h4:hover {
+    border-bottom: 1px solid var(--white-gray);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 990px) {
+  .form-container {
+    justify-content: center;
+  }
+
+  .footer-input {
+    max-width: 220px;
+  }
+
 }
