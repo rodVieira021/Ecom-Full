@@ -102,7 +102,7 @@
   color: var(--white-gray);
   padding: 15px;
   transition: 0.3s ease-in-out;
-  width: 150px;
+  max-width: 150px;
 }
 
 .login-submit:hover,
@@ -160,9 +160,6 @@
 }
 
 /* RIGHT */
-
-.form-container-cupoun {
-}
 
 .form-container-cupoun p {
   margin-bottom: 20px;
@@ -227,7 +224,7 @@
 }
 
 .payments-methonds {
-  width: 300px;
+  width: 100%;
 }
 
 .cc-form {
@@ -255,21 +252,78 @@
   text-align: center;
 }
 
+label {
+  margin: 0;
+}
 
 /* MEDIAS */
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480px) {
+  .header h2 {
+    font-size: 20px;
+  }
 
+  .form-login,
+  .form-container-cupoun {
+    font-size: 12px;
+  }
+  .main-container {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .left-header,
+  .right-header {
+    font-size: 8px;
+  }
+
+  .billing-container h4,
+  .order h4,
+  .payment h4 {
+    font-size: 14px;
+  }
+
+  .form-billing,
+  .form-left,
+  .prod-table {
+    grid-template-columns: 1fr;
+  }
+
+  .left-col1 label,
+  .left-col2 label,
+  .cc-left-div label,
+  .cc-right-div {
+    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .left-col1 input,
+  .left-col2 input,
+  .cc-left-div input,
+  .cc-right-div input {
+    max-width: 250px;
+  }
+
+  .cc-form {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .table-body-products {
+    display: grid;
+  }
+  .table-head-coupon th {
+    display: none;
+  }
 }
 
-@media (min-width: 481px) and (max-width: 768px){
-
+@media (min-width: 481px) and (max-width: 768px) {
 }
 
-@media (min-width: 769px) and (max-width: 990px){
-
+@media (min-width: 769px) and (max-width: 990px) {
 }
 
-@media (min-width: 991px) and (max-width: 1250px){
-  
+@media (min-width: 991px) and (max-width: 1250px) {
 }

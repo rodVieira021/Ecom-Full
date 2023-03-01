@@ -33,7 +33,7 @@ const Checkout = () => {
   const tenPercent = sum * 0.1;
 
   return (
-    <div>
+    <div className='main-div'>
       <div className="header">
         <h2>CHECKOUT</h2>
       </div>
@@ -148,7 +148,7 @@ const Checkout = () => {
               <tbody className="table-body">
                 {checkoutCart.map((items) => {
                   return (
-                    <tr>
+                    <tr className='table-body-products'>
                       <td>{items.Title}</td>
                       <td>${items.Price}</td>
                       <td>{items.Qty}</td>
