@@ -142,7 +142,8 @@ const Cart = () => {
               <Link to="/checkout">
                 <button className="text-area-btn">CHECKOUT</button>
               </Link>
-              <img className="payment" src={payment} alt="payments methods" />
+              <div className='payment-container flex jcc aic'>
+              <img className="payment" src={payment} alt="payments methods" /></div>
             </div>
           </form>
         </div>

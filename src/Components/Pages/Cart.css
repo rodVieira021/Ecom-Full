@@ -428,16 +428,23 @@ input:focus {
   }
 
   .text-area-container {
-    width: 100%;
     text-align: center;
+    margin: 20px;
+  }
+
+  .text-area-btn {
+    max-width: 600px;
   }
 
   .text-area {
     width: 90%;
   }
+  .righ-products {
+    width: 90%;
+  }
 
-  .payment {
-    width: 100%;
+  .payment-container {
+    padding: 50px;
   }
 }
 
