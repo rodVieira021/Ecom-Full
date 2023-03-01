@@ -19,10 +19,10 @@ const Cart = () => {
 
   return (
     <>
-      <div className="header">
+      <div className="main-container">
         <h2>YOUR CART</h2>
       </div>
-      <div className="products-container grid col-3">
+      <div className="products-container flex jcc aic">
         <div className="left-products">
           {newCart.length <= 0 ? (
             <p className="empty-cart-page">YOUR CART IS EMPTY</p>
@@ -30,10 +30,10 @@ const Cart = () => {
             <table className="prod-table">
               <thead className="table-head">
                 <tr>
-                  <th>PRODUCT</th>
-                  <th>PRICE</th>
-                  <th>QUANTITY</th>
-                  <th>TOTAL</th>
+                  <th id="table-product">PRODUCT</th>
+                  <th id="table-price">PRICE</th>
+                  <th id="table-qty">QUANTITY</th>
+                  <th id="table-total">TOTAL</th>
                 </tr>
               </thead>
               <tbody>
@@ -42,15 +42,19 @@ const Cart = () => {
                     <tr className="added-prod">
                       <td className="td-img flex aic">
                         <div>
-                          <img src={items.Image} alt="cart" />
+                          <img
+                            className="item-img"
+                            src={items.Image}
+                            alt="cart"
+                          />
                         </div>
                         <div>
-                          <p>{items.Title}</p>
-                          <p>{items.Brand}</p>
+                          <p className="item-title">{items.Title}</p>
+                          <p className="item-brand">{items.Brand}</p>
                         </div>
                       </td>
-                      <td>${items.Price}</td>
-                      <td>
+                      <td className="item-price">${items.Price}</td>
+                      <td className="btn-qty-qty">
                         <span onClick={() => dispatch(cartMinusBtn(items.id))}>
                           -
                         </span>
@@ -138,7 +142,7 @@ const Cart = () => {
               <Link to="/checkout">
                 <button className="text-area-btn">CHECKOUT</button>
               </Link>
-              <img src={payment} alt="payments methods" />
+              <img className="payment" src={payment} alt="payments methods" />
             </div>
           </form>
         </div>
