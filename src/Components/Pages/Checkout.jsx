@@ -33,7 +33,7 @@ const Checkout = () => {
   const tenPercent = sum * 0.1;
 
   return (
-    <div className='main-div'>
+    <div className="main-div">
       <div className="header">
         <h2>CHECKOUT</h2>
       </div>
@@ -74,7 +74,7 @@ const Checkout = () => {
           <div className="billing-container">
             <h4>BILLING DETAILS</h4>
             <form className="form-billing grid col-2">
-              <div className="left-col1">
+              <div className="left-col1 flex">
                 <label htmlFor="firstname">First Name</label>
                 <input type="text" className="firstname" />
                 <label htmlFor="email">Email</label>
@@ -92,7 +92,7 @@ const Checkout = () => {
                   <label htmlFor="check-form-left">Create an account?</label>
                 </div>
               </div>
-              <div className="left-col2">
+              <div className="left-col2 flex">
                 <label htmlFor="lastname">Last Name</label>
                 <input type="text" className="lastname" />
                 <label htmlFor="telephone">Telephone</label>
@@ -148,7 +148,7 @@ const Checkout = () => {
               <tbody className="table-body">
                 {checkoutCart.map((items) => {
                   return (
-                    <tr className='table-body-products'>
+                    <tr className="table-body-products">
                       <td>{items.Title}</td>
                       <td>${items.Price}</td>
                       <td>{items.Qty}</td>
@@ -174,7 +174,7 @@ const Checkout = () => {
           <div className="payment">
             <h4>PAYMENT DETAILS</h4>
             <form className="cc-form grid col-2">
-              <div className="cc-left-div">
+              <div className="cc-left-div flex">
                 <label htmlFor="ccName">Name on Card</label>
                 <input type="text" className="cc-name" />
 
@@ -184,7 +184,7 @@ const Checkout = () => {
                 <label htmlFor="cc-number">Expiration Date</label>
                 <input type="date" className="cc-exp" />
               </div>
-              <div className="cc-right-div">
+              <div className="cc-right-div flex">
                 <label htmlFor="cc-number">Credit Card Type</label>
                 <input
                   type="text"

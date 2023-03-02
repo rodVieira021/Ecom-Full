@@ -30,7 +30,7 @@
   height: 120px;
 }
 
-label {
+.footer-form label {
   display: flex;
   flex-direction: column;
   margin-right: 30px;
