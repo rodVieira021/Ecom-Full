@@ -97,15 +97,15 @@ const Cart = () => {
             <form className="shipping-form">
               <h4>Get shipping estimates</h4>
               <div className="shipping-inputs flex aic">
-                <div className="input-container">
+                <div className="input-container flex">
                   <label htmlFor="shipping-country">Country</label>
                   <input type="text" className="shipping-country" />
                 </div>
-                <div className="input-container">
+                <div className="input-container flex">
                   <label htmlFor="shipping-state">State</label>
                   <input type="text" className="shipping-state" />
                 </div>
-                <div className="input-container">
+                <div className="input-container flex">
                   <label htmlFor="shipping-postal">Postal/Zip Code</label>
                   <input type="text" className="shipping-postal" />
                 </div>
@@ -142,8 +142,9 @@ const Cart = () => {
               <Link to="/checkout">
                 <button className="text-area-btn">CHECKOUT</button>
               </Link>
-              <div className='payment-container flex jcc aic'>
-              <img className="payment" src={payment} alt="payments methods" /></div>
+              <div className="payment-container flex jcc aic">
+                <img className="payment" src={payment} alt="payments methods" />
+              </div>
             </div>
           </form>
         </div>

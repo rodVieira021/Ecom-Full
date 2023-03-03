@@ -8,8 +8,7 @@ import {
   cart,
   removeFromCart,
   cartPlusBtn,
-  cartMinusBtn,
-  clearCart,
+  cartMinusBtn
 } from "../../Redux/productSlice";
 
 const CartPopup = () => {

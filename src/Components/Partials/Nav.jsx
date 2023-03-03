@@ -95,7 +95,7 @@ const Nav = () => {
             alt="menu-small-x"
           />
           <div style={openSmallMenu} className="small-menu abs">
-            <ul className="small-nav-ul">
+            <ul className="small-nav-ul flex aic">
               <li>HOME</li>
               <li>SHOP</li>
               <li>PRODUCT</li>

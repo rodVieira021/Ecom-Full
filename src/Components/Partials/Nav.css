@@ -141,10 +141,8 @@
 }
 
 .small-nav-ul {
-  display: flex;
   flex-direction: column;
   gap: 25px;
-  align-items: center;
   text-align: left;
   padding-top: 50px;
 }
@@ -320,6 +318,20 @@
   .red-banner-middle {
     display: none;
   }
+
+  .small-menu {
+    width: 180px;
+    font-size: 12px;
+  }
+
+  .small-nav-ul {
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+
+  .small-nav-ul li {
+    padding-left: 25px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -335,6 +347,20 @@
   .ul-nav-1 li,
   .red-banner-middle {
     display: none;
+  }
+
+  .small-menu {
+    width: 220px;
+    font-size: 12px;
+  }
+
+  .small-nav-ul {
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+
+  .small-nav-ul li {
+    padding-left: 50px;
   }
 }
 

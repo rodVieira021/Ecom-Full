@@ -157,6 +157,10 @@
   flex-wrap: wrap;
 }
 
+.input-container {
+  flex-direction: column;
+}
+
 .input-container label {
   text-align: left;
   padding-bottom: 10px;

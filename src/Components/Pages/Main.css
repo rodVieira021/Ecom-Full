@@ -491,15 +491,23 @@
   }
 
   .inner-parallax h4 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .inner-parallax p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .section-5-main {
     flex-wrap: wrap;
+  }
+
+  .sec-5-text-img img {
+    width: 150px;
+  }
+
+  .sec-5-text-img {
+    font-size: 12px;
   }
 
   .section-6 {
@@ -570,7 +578,7 @@
   }
 
   .grid-sec-4 {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .section-4-btn {
@@ -587,6 +595,14 @@
 
   .section-5-main {
     flex-wrap: wrap;
+  }
+
+  .sec-5-text-img img {
+    width: 150px;
+  }
+
+  .sec-5-text-img {
+    font-size: 12px;
   }
 
   .section-6 {
