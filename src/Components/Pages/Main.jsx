@@ -121,7 +121,7 @@ const Main = () => {
       </div>
 
       <div className="section-3">
-        <div className='section-3-header'>
+        <div className="section-3-header">
           <h4>What are you looking for</h4>
           <p>Solutions for a better driving experience</p>
         </div>
@@ -134,7 +134,7 @@ const Main = () => {
           >
             &#60;
           </button>
-          <div className='sec-3-carousel-img-container'>
+          <div className="sec-3-carousel-img-container">
             <img
               className="sec-3-carousel-img"
               src={images[indexImg]}
