@@ -13,18 +13,25 @@ import DropdownLang from "./DropdownLang";
 import CartPopup from "./CartPopup";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { cart } from "../../Redux/productSlice";
+import { items } from "../.././Redux/productSlice.js";
 
 const Nav = () => {
   const [cartDrop, setCartDrop] = useState(false);
   const [usd, setUsd] = useState(false);
   const [lang, setLang] = useState(false);
   const [searchOn, setSearchOn] = useState(false);
+  const [searchProduct, setSearchProduct] = useState("");
   const [openSmallMenu, setOpenSmallMenu] = useState({ display: "none" });
   const [hideMenu, setHideMenu] = useState({ display: "block" });
   const [menuX, setMenuX] = useState({ display: "none" });
   const cartCount = useSelector(cart);
+  const productNav = useSelector(items);
+
+  const filterProduct = productNav.filter((pr) => {
+    return pr.Description.toLowerCase().includes(searchProduct.toLowerCase());
+  });
 
   const showMenu = () => {
     setOpenSmallMenu({
@@ -319,13 +326,26 @@ const Nav = () => {
           <form className="flex aic">
             <img src={magnifierNav} alt="magnifier" />
             <input
+              value={searchProduct}
               className="input-form"
               placeholder="Search for products..."
+              onChange={(e) => setSearchProduct(e.target.value)}
             />
           </form>
           <button className="btn-close-form" onClick={() => setSearchOn(false)}>
             &#215;
           </button>
+          <div className="div-search">
+            {searchProduct !== ""
+              ? filterProduct.map((each) => {
+                  return (
+                    <div>
+                      <p>{each.Description}</p>
+                    </div>
+                  );
+                })
+              : ""}
+          </div>
         </div>
       ) : (
         ""

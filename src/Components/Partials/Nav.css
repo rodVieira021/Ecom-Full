@@ -171,6 +171,21 @@
   display: none;
 }
 
+.div-search {
+  position: absolute;
+  background-color: var(--white-gray);
+  top: 100px;
+  left: 50px;
+  width: 90%;
+}
+
+.div-search p {
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
 /* DROPDOWN */
 
 .drop-1 {
