@@ -46,6 +46,7 @@ const productSlice = createSlice({
       },
     ],
     cart: [],
+    navSearch: [],
   },
   reducers: {
     addToCart: (state, action) => {
@@ -89,6 +90,10 @@ const productSlice = createSlice({
         return item;
       });
     },
+
+    addToSearch: (state, action) => {
+      state.navSearch.push({ ...action.payload });
+    },
   },
 });
 
@@ -99,6 +104,8 @@ export const {
   clearCart,
   cartPlusBtn,
   cartMinusBtn,
+  addToSearch,
 } = productSlice.actions;
 export const items = (state) => state.product.items;
 export const cart = (state) => state.product.cart;
+export const navSearch = (state) => state.product.navSearch;

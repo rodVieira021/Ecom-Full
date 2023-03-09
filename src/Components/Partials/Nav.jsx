@@ -13,9 +13,9 @@ import DropdownLang from "./DropdownLang";
 import CartPopup from "./CartPopup";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { cart } from "../../Redux/productSlice";
-import { items } from "../.././Redux/productSlice.js";
+import { items, addToSearch } from "../.././Redux/productSlice.js";
 
 const Nav = () => {
   const [cartDrop, setCartDrop] = useState(false);
@@ -28,10 +28,7 @@ const Nav = () => {
   const [menuX, setMenuX] = useState({ display: "none" });
   const cartCount = useSelector(cart);
   const productNav = useSelector(items);
-
-  const filterProduct = productNav.filter((pr) => {
-    return pr.Description.toLowerCase().includes(searchProduct.toLowerCase());
-  });
+  const dispatch = useDispatch();
 
   const showMenu = () => {
     setOpenSmallMenu({
@@ -45,6 +42,11 @@ const Nav = () => {
     setOpenSmallMenu({ display: "none" });
     setHideMenu({ display: "block" });
     setMenuX({ display: "none" });
+  };
+
+  const closeSearchBar = () => {
+    setSearchOn(false);
+    setSearchProduct("");
   };
 
   return (
@@ -332,18 +334,37 @@ const Nav = () => {
               onChange={(e) => setSearchProduct(e.target.value)}
             />
           </form>
-          <button className="btn-close-form" onClick={() => setSearchOn(false)}>
+          <button className="btn-close-form" onClick={() => closeSearchBar()}>
             &#215;
           </button>
           <div className="div-search">
             {searchProduct !== ""
-              ? filterProduct.map((each) => {
-                  return (
-                    <div>
-                      <p>{each.Description}</p>
-                    </div>
-                  );
-                })
+              ? productNav
+                  .filter((pr) =>
+                    pr.Description.toLowerCase().includes(
+                      searchProduct.toLowerCase()
+                    )
+                  )
+                  .map((each) => {
+                    return (
+                      <div
+                        className="search-resp flex aic"
+                        onClick={() => dispatch(addToSearch(each))}
+                      >
+                        <img
+                          className="search-img"
+                          src={each.Image}
+                          alt="prod_image"
+                        />
+                        <Link
+                          to="/productpage"
+                          onClick={() => setSearchOn(false)}
+                        >
+                          <p className="search-desc">{each.Description}</p>
+                        </Link>
+                      </div>
+                    );
+                  })
               : ""}
           </div>
         </div>

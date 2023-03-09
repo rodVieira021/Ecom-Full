@@ -179,12 +179,20 @@
   width: 90%;
 }
 
-.div-search p {
-  padding: 10px;
+.search-img {
+  width: 80px;
+}
+
+.search-resp {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   cursor: pointer;
 }
 
-
+.search-resp:hover {
+  border-top: 1px solid var(--fade-gray);
+  border-bottom: 1px solid var(--fade-gray);
+}
 
 /* DROPDOWN */
 
@@ -315,6 +323,7 @@
 
 .nav-main a {
   text-decoration: none;
+  color: var(--strong-black);
 }
 
 /* MEDIAS */
