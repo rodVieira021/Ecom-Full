@@ -92,8 +92,10 @@ const productSlice = createSlice({
     },
 
     addToSearch: (state, action) => {
-      state.navSearch.push({ ...action.payload });
+      state.navSearch = [];
+      state.navSearch.push(action.payload);
     },
+
   },
 });
 

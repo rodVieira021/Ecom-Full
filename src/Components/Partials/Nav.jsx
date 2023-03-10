@@ -360,7 +360,7 @@ const Nav = () => {
                           to="/productpage"
                           onClick={() => setSearchOn(false)}
                         >
-                          <p className="search-desc">{each.Description}</p>
+                          <p className="search-p">{each.Description}</p>
                         </Link>
                       </div>
                     );

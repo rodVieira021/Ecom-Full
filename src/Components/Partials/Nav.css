@@ -194,6 +194,11 @@
   border-bottom: 1px solid var(--fade-gray);
 }
 
+.search-resp a{
+  text-decoration: none;
+  color: var(--strong-black);
+}
+
 /* DROPDOWN */
 
 .drop-1 {

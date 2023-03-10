@@ -34,13 +34,19 @@ how to write vanilla js in react (nav bar color changes)
 
 ---
 
+@media (min-width: 320px) and (max-width: 480px) {
 
-{
-        id: 1,
-        image: "./Images/cart/breakingpads.jpeg",
-        productTitle: "Breaking Pads",
-        productCategory: "Breaking system",
-        productDescription: "Pair of breaking pads",
-        productPrice: 159,
-        productBrand: "Toyota",
-      },
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+@media (min-width: 769px) and (max-width: 990px) {
+
+}
+
+
+@media (min-width: 991px) and (max-width: 1250px) {
+  
+}
