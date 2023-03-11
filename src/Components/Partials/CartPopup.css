@@ -75,6 +75,8 @@
 }
 
 .empty-msg {
+  position: relative;
+  bottom: 10px;
   text-align: center;
   font-size: 20px;
   font-weight: 400;

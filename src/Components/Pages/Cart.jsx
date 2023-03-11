@@ -19,7 +19,7 @@ const Cart = () => {
 
   return (
     <>
-      <div className="main-container">
+      <div className="main-container-cart">
         <h2>YOUR CART</h2>
       </div>
       <div className="products-container flex jcc aic">

@@ -37,7 +37,7 @@ const Checkout = () => {
       <div className="header">
         <h2>CHECKOUT</h2>
       </div>
-      <div className="main-container grid col-2">
+      <div className="main-container-check grid col-2">
         <div className="left">
           <h4 className="left-header">
             {" "}

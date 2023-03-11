@@ -11,7 +11,7 @@
   --border-gray: #8080805a;
 }
 
-.main-container {
+.main-container-check {
   margin: 50px;
   column-gap: 50px;
 }
@@ -284,7 +284,7 @@
   .form-container-cupoun {
     font-size: 10px;
   }
-  .main-container {
+  .main-container-check {
     grid-template-columns: 1fr;
     row-gap: 50px;
     margin: 5px;
@@ -345,7 +345,7 @@
     font-size: 10px;
   }
 
-  .main-container {
+  .main-container-check {
     grid-template-columns: 1fr;
     row-gap: 50px;
     margin: 5px;
@@ -387,7 +387,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 990px) {
-  .main-container {
+  .main-container-check {
     grid-template-columns: 1fr;
     row-gap: 50px;
     margin: 5px;
@@ -401,7 +401,7 @@
 }
 
 @media (min-width: 991px) and (max-width: 1250px) {
-  .main-container {
+  .main-container-check {
     row-gap: 30px;
     margin: 5px;
     padding: 5px;
@@ -412,8 +412,6 @@
     padding: 20px;
     font-size: 14px;
   }
-
- 
 }
 
 @media (min-width: 1335px) {
