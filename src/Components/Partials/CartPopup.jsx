@@ -4,18 +4,21 @@ import "./CartPopup.css";
 import deleteItem from "../../Images/cart/close-logo.png";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 import {
   cart,
   removeFromCart,
   cartPlusBtn,
-  cartMinusBtn
+  cartMinusBtn,
 } from "../../Redux/productSlice";
 
 const CartPopup = () => {
   const cartPopup = useSelector(cart);
   const dispatch = useDispatch();
+  const [hidePopup, setHidePopup] = useState({ display: "block" });
+
   return (
-    <div className="cart-popup abs">
+    <div style={hidePopup} className="cart-popup abs">
       <div className="cart-popup-product">
         {cartPopup.map((items) => {
           return (
@@ -80,10 +83,20 @@ const CartPopup = () => {
             </div>
             <div className="cart-popup-btns flex">
               <Link to="/cart">
-                <button className="cart-popup-btn-1">VIEW CART</button>
+                <button
+                  onClick={() => setHidePopup({ display: "none" })}
+                  className="cart-popup-btn-1"
+                >
+                  VIEW CART
+                </button>
               </Link>
               <Link to="/checkout">
-                <button className="cart-popup-btn-2">CHECKOUT</button>
+                <button
+                  onClick={() => setHidePopup({ display: "none" })}
+                  className="cart-popup-btn-2"
+                >
+                  CHECKOUT
+                </button>
               </Link>
             </div>
           </div>
