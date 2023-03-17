@@ -32,6 +32,8 @@ how to write vanilla js in react (nav bar color changes)
 - Multi-language
 
 
+---Checkout save customer data in a new array
+
 ---
 
 @media (min-width: 320px) and (max-width: 480px) {

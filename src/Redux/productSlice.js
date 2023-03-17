@@ -46,7 +46,6 @@ const productSlice = createSlice({
       },
     ],
     cart: [],
-    navSearch: [],
   },
   reducers: {
     addToCart: (state, action) => {

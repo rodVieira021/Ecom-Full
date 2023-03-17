@@ -345,21 +345,22 @@ const Nav = () => {
                       searchProduct.toLowerCase()
                     )
                   )
-                  .map((each) => {
+                  .map((each, index) => {
                     return (
                       <div
                         className="search-resp flex aic"
                         onClick={() => dispatch(addToSearch(each))}
                       >
-                        <img
-                          className="search-img"
-                          src={each.Image}
-                          alt="prod_image"
-                        />
                         <Link
-                          to="/productpage"
+                          to={`/product/${each.id}`}
                           onClick={() => setSearchOn(false)}
+                          className="search-img-link flex aic"
                         >
+                          <img
+                            className="search-img"
+                            src={each.Image}
+                            alt="prod_image"
+                          />
                           <p className="search-p">{each.Description}</p>
                         </Link>
                       </div>
