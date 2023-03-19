@@ -1,11 +1,11 @@
 import React from "react";
 import "../../App.css";
 import "./Checkout.css";
-import { Link } from "react-router-dom";
-import Footer from "../Partials/Footer";
-import { cart } from "../../Redux/productSlice";
-import { useSelector } from "react-redux";
 import payment from "../.././Images/cart/payment-img.jpg";
+import Footer from "../Partials/Footer";
+import { Link } from "react-router-dom";
+import { cart, clearCart } from "../../Redux/productSlice";
+import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 
 const Checkout = () => {
@@ -14,6 +14,9 @@ const Checkout = () => {
   const [hcoupon, setHcoupon] = useState({ display: "none" });
   const [discount, setDiscount] = useState("");
   const [submitDiscount, setSubmitDiscount] = useState("");
+  const [formData, setFormData] = useState([]);
+  const [popup, setPopup] = useState({ display: "none" });
+  const dispatch = useDispatch();
 
   const changeReturning = () => {
     setHreturning({ display: "block" });
@@ -27,6 +30,16 @@ const Checkout = () => {
     setDiscount("");
   };
 
+  const formInputs = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const placeOrder = () => {
+    setPopup({ display: "block" });
+    dispatch(clearCart());
+  };
+
   const sum = checkoutCart.reduce((acc, price) => {
     return Math.trunc(Number(acc + price.Price * price.Qty));
   }, 0);
@@ -34,6 +47,31 @@ const Checkout = () => {
 
   return (
     <div className="main-div">
+      <div style={popup} className="order-placed-overlay">
+        <div className="order-placed abs">
+          {
+            <div>
+              <h4>Thank you for your order</h4>
+              <div className="flex">
+                <p>Name: {formData.firstname}</p>
+                <p>{formData.lastname}</p>
+              </div>
+              <p>Delivery address: {formData.address}</p>
+              <div className="flex">
+                <p>{formData.city},</p>
+                <p>{formData.country}</p>
+              </div>
+              <p>Phone: {formData.telephone}</p>
+              <div className="placed-order-link">
+                <Link to="/">
+                  {" "}
+                  <span> &#60; Go back to main page</span>
+                </Link>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
       <div className="header">
         <h2>CHECKOUT</h2>
       </div>
@@ -76,13 +114,28 @@ const Checkout = () => {
             <form className="form-billing grid col-2">
               <div className="left-col1 flex">
                 <label htmlFor="firstname">First Name</label>
-                <input type="text" className="firstname" />
+                <input
+                  type="text"
+                  name="firstname"
+                  onChange={formInputs}
+                  className="firstname"
+                />
                 <label htmlFor="email">Email</label>
-                <input type="text" className="email" />
+                <input
+                  type="text"
+                  name="email"
+                  onChange={formInputs}
+                  className="email"
+                />
                 <label htmlFor="company">Company</label>
                 <input type="text" className="company" />
                 <label htmlFor="apartment">Apartment</label>
-                <input type="text" className="apartment" />
+                <input
+                  type="text"
+                  name="number"
+                  onChange={formInputs}
+                  className="apartment"
+                />
                 <label htmlFor="postcode">Postal Code</label>
                 <input type="text" className="postcode" />
                 <label htmlFor="region">Region / State</label>
@@ -94,15 +147,40 @@ const Checkout = () => {
               </div>
               <div className="left-col2 flex">
                 <label htmlFor="lastname">Last Name</label>
-                <input type="text" className="lastname" />
+                <input
+                  type="text"
+                  name="lastname"
+                  onChange={formInputs}
+                  className="lastname"
+                />
                 <label htmlFor="telephone">Telephone</label>
-                <input type="text" className="telephone" />
+                <input
+                  type="text"
+                  name="telephone"
+                  onChange={formInputs}
+                  className="telephone"
+                />
                 <label htmlFor="address">Address</label>
-                <input type="text" className="address" />
+                <input
+                  type="text"
+                  name="address"
+                  onChange={formInputs}
+                  className="address"
+                />
                 <label htmlFor="city">City</label>
-                <input type="text" className="city" />
+                <input
+                  type="text"
+                  name="city"
+                  onChange={formInputs}
+                  className="city"
+                />
                 <label htmlFor="country">Country</label>
-                <input type="text" className="country" />
+                <input
+                  type="text"
+                  name="country"
+                  onChange={formInputs}
+                  className="country"
+                />
               </div>
             </form>
             <div className="order-notes">
@@ -206,10 +284,13 @@ const Checkout = () => {
                 />
               </div>
             </form>
-            <button className="place-order-btn">PLACE ORDER</button>
+            <button className="place-order-btn" onClick={() => placeOrder()}>
+              PLACE ORDER
+            </button>
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

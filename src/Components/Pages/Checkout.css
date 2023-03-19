@@ -11,6 +11,49 @@
   --border-gray: #8080805a;
 }
 
+.order-placed-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.order-placed {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.order-placed h4 {
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.order-placed p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.placed-order-link {
+  margin: 50px;
+  text-align: center;
+}
+
+.order-placed a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.order-placed a:hover {
+  text-decoration: underline;
+}
+
 .main-container-check {
   margin: 50px;
   column-gap: 50px;

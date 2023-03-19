@@ -94,7 +94,6 @@ const productSlice = createSlice({
       state.navSearch = [];
       state.navSearch.push(action.payload);
     },
-
   },
 });
 
