@@ -52,12 +52,12 @@ const Checkout = () => {
           {
             <div>
               <h4>Thank you for your order</h4>
-              <div className="flex">
+              <div className="flex jcc">
                 <p>Name: {formData.firstname}</p>
                 <p>{formData.lastname}</p>
               </div>
               <p>Delivery address: {formData.address}</p>
-              <div className="flex">
+              <div className="flex jcc">
                 <p>{formData.city},</p>
                 <p>{formData.country}</p>
               </div>

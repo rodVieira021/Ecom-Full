@@ -376,6 +376,32 @@
   .order {
     padding: 0 5px;
   }
+
+  .order-placed-overlay {
+    margin-top: 95px;
+  }
+
+  .order-placed {
+    width: 100%;
+  }
+
+  .order-placed h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .order-placed p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .order-placed a {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -387,7 +413,6 @@
   .form-container-cupoun {
     font-size: 10px;
   }
-
   .main-container-check {
     grid-template-columns: 1fr;
     row-gap: 50px;
@@ -427,6 +452,38 @@
     grid-template-columns: 1fr;
     margin: 0;
   }
+
+  .table-head-coupon th,
+  .table-body td {
+    font-size: 10px;
+    padding: 5px 5px;
+  }
+
+  .order-placed-overlay {
+    margin-top: 95px;
+  }
+
+  .order-placed {
+    width: 100%;
+  }
+
+  .order-placed h4 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .order-placed p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .order-placed a {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 990px) {
@@ -440,6 +497,31 @@
   .left-header,
   .right-header {
     padding: 20px;
+  }
+
+  .order-placed-overlay {
+    margin-top: 95px;
+  }
+
+  .order-placed {
+    width: 100%;
+  }
+
+  .order-placed h4 {
+    font-size: 32px;
+
+    text-align: center;
+  }
+
+  .order-placed p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .order-placed a {
+    font-size: 16px;
   }
 }
 
@@ -455,10 +537,47 @@
     padding: 20px;
     font-size: 14px;
   }
+
+  .order-placed-overlay {
+    margin-top: 80px;
+  }
+
+  .order-placed {
+    width: 100%;
+  }
+
+  .order-placed h4 {
+    font-size: 38px;
+
+    text-align: center;
+  }
+
+  .order-placed p {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .order-placed a {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1335px) {
   .prod-table th {
     padding: 8px 50px;
+  }
+  .order-placed-overlay {
+    margin-top: 80px;
+  }
+
+  .order-placed {
+    width: 100%;
+  }
+
+  .order-placed h4,
+  .order-placed p {
+    text-align: center;
   }
 }
