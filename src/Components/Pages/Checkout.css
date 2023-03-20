@@ -525,7 +525,7 @@
   }
 }
 
-@media (min-width: 991px) and (max-width: 1250px) {
+@media (min-width: 991px) and (max-width: 1334px) {
   .main-container-check {
     row-gap: 30px;
     margin: 5px;
@@ -546,21 +546,9 @@
     width: 100%;
   }
 
-  .order-placed h4 {
-    font-size: 38px;
-
-    text-align: center;
-  }
-
+  .order-placed h4,
   .order-placed p {
-    font-size: 26px;
-    font-weight: 400;
-    margin-bottom: 10px;
     text-align: center;
-  }
-
-  .order-placed a {
-    font-size: 18px;
   }
 }
 
