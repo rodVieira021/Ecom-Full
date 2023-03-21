@@ -28,7 +28,7 @@
 .div-lang {
   background-color: var(--white-gray);
   color: var(--strong-black);
-  z-index: 997;
+  z-index: 998;
 }
 
 .ul-usd-nav li {
@@ -199,8 +199,7 @@
   color: var(--strong-black);
 }
 
-.search-img-link{
-
+.search-img-link {
 }
 
 /* DROPDOWN */
